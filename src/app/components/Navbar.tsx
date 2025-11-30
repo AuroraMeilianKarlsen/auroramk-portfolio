@@ -7,7 +7,7 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState<string>('home');
 
   useEffect(() => {
-    const sections = ['home', 'about', 'skills', 'game', 'contact'];
+    const sections = ['home', 'contact', 'about', 'skills', 'game'];
 
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 150; // Offset for navbar and some padding
@@ -53,6 +53,7 @@ export default function Navbar() {
 
   const navLinks = [
     { id: 'home', label: 'Home', href: '#home' },
+    { id: 'contact', label: 'Contact', href: '#contact' },
     { id: 'about', label: 'About', href: '#about' },
     { id: 'skills', label: 'Skills', href: '#skills' },
     {
@@ -67,7 +68,7 @@ export default function Navbar() {
       ),
       href: '#game',
     },
-    { id: 'contact', label: 'Contact', href: '#contact' },
+    
   ];
 
   return (

@@ -15,12 +15,12 @@ export default function Home() {
   return (
     <main className="bg-gray-900 text-white">
       <HomeSection />
+      <ContactSection />
       <AboutSection />
       <PictureGallerySection />
       <SkillsSection />
       <GameSection onOpenGame={() => setIsGameOpen(true)} />
       <DinoGameModal isOpen={isGameOpen} onClose={() => setIsGameOpen(false)} />
-      <ContactSection />
     </main>
   );
 }

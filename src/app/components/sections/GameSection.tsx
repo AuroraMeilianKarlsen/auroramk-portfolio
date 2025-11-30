@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 interface GameSectionProps {
   onOpenGame: () => void;
 }
@@ -9,10 +11,16 @@ export default function GameSection({ onOpenGame }: GameSectionProps) {
         <div className="mt-8 flex justify-center">
           <button
             onClick={onOpenGame}
-            className="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors text-lg font-semibold border-2 border-gray-600 hover:border-gray-500"
+            className="p-4 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors border-2 border-gray-600 hover:border-gray-500 hover:scale-105"
             aria-label="Åpne Dino-spill"
           >
-            Spill mitt favoritt spill
+            <Image
+              src="/dino/DinoStart.png"
+              alt="Dino"
+              width={120}
+              height={120}
+              className="w-24 h-24 object-contain"
+            />
           </button>
         </div>
       </div>

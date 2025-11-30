@@ -57,33 +57,33 @@ const tools: Skill[] = [
 
 function SkillCard({ skill }: { skill: Skill }) {
   return (
-    <Card className="flex flex-col items-center gap-1.5">
+    <Card className="flex flex-col items-center gap-1 p-2">
       {skill.icon ? (
         <Image
           src={skill.icon}
           alt={skill.iconAlt || `${skill.name} logo`}
-          width={48}
-          height={48}
-          className="h-12 w-12"
+          width={32}
+          height={32}
+          className="h-8 w-8"
         />
       ) : (
-        <div className="h-12 w-12 flex items-center justify-center bg-gray-700 rounded-lg">
+        <div className="h-8 w-8 flex items-center justify-center bg-gray-700 rounded">
           <span
             className={`font-bold text-white ${
               skill.textIcon === 'SQL'
-                ? 'text-base'
+                ? 'text-[10px]'
                 : skill.textIcon === 'R' && skill.name === 'R'
-                  ? 'text-lg'
+                  ? 'text-sm'
                   : skill.textIcon === 'J'
-                    ? 'text-xl'
-                    : 'text-xs'
+                    ? 'text-base'
+                    : 'text-[10px]'
             }`}
           >
             {skill.textIcon}
           </span>
         </div>
       )}
-      <span className="text-xs text-gray-300">{skill.name}</span>
+      <span className="text-[10px] text-gray-300">{skill.name}</span>
     </Card>
   );
 }
@@ -92,16 +92,16 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="px-6 py-12 scroll-mt-20"
+      className="px-6 py-8 scroll-mt-20"
       aria-label="Ferdigheter"
     >
-      <div className="mx-auto max-w-3xl">
-        <h2 className="text-3xl font-semibold">Skills</h2>
+      <div className="mx-auto max-w-2xl">
+        <h2 className="text-2xl font-semibold">Skills</h2>
 
         {/* Språk */}
-        <div className="mt-8">
-          <h3 className="text-xl font-medium text-gray-200 mb-4">Språk</h3>
-          <div className="grid grid-cols-3 gap-6 sm:grid-cols-4 md:grid-cols-5">
+        <div className="mt-4">
+          <h3 className="text-base font-medium text-gray-200 mb-2">Språk</h3>
+          <div className="grid grid-cols-4 gap-3 sm:grid-cols-5 md:grid-cols-7">
             {languages.map((skill) => (
               <SkillCard key={skill.name} skill={skill} />
             ))}
@@ -109,11 +109,11 @@ export default function SkillsSection() {
         </div>
 
         {/* Teknologier */}
-        <div className="mt-12">
-          <h3 className="text-xl font-medium text-gray-200 mb-4">
+        <div className="mt-6">
+          <h3 className="text-base font-medium text-gray-200 mb-2">
             Teknologier
           </h3>
-          <div className="grid grid-cols-3 gap-6 sm:grid-cols-4 md:grid-cols-5">
+          <div className="grid grid-cols-4 gap-3 sm:grid-cols-5 md:grid-cols-7">
             {technologies.map((skill) => (
               <SkillCard key={skill.name} skill={skill} />
             ))}
@@ -121,9 +121,9 @@ export default function SkillsSection() {
         </div>
 
         {/* Verktøy */}
-        <div className="mt-12">
-          <h3 className="text-xl font-medium text-gray-200 mb-4">Verktøy</h3>
-          <div className="grid grid-cols-3 gap-6 sm:grid-cols-4 md:grid-cols-5">
+        <div className="mt-6">
+          <h3 className="text-base font-medium text-gray-200 mb-2">Verktøy</h3>
+          <div className="grid grid-cols-4 gap-3 sm:grid-cols-5 md:grid-cols-7">
             {tools.map((skill) => (
               <SkillCard key={skill.name} skill={skill} />
             ))}

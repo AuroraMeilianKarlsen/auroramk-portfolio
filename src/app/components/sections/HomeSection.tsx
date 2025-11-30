@@ -17,10 +17,13 @@ export default function HomeSection() {
             </span>
           </h1>
           <p className="mt-4 text-gray-300">
-            Informatikk bachelor-student med bachelor i Celle og Molekylær Biologi.
+            Informatikkstudent med bachelor i Celle og Molekylær Biologi.
             <br />
-            Erfaring med prosjektledelse, koordinering av frivillige, logistikkplanlegging og gjennomføring av sosiale arrangementer. Kompetanse innen programmeringsspråk som Java, Python, HTML/CSS/JavaScript, TypeScript og R, samt teknologier som React, Next.js, Tailwind, SpringBoot og verktøy som Git, Docker og Scrum. Har erfaring med kundebehandling, mersalg og tilrettelegging av behov. Erfaring med fasilitering av gruppearbeid og dynamikk. 
-          </p>
+            <br />
+            Mitt navn er Aurora Meilian Karlsen, og jeg studerer 3. året på
+              bachelor i informatikk ved NTNU. Jeg er en utvikler som liker å
+              bygge enkle og brukervennlige løsninger. 
+            </p>
           <br />
           <br />
           <br />
