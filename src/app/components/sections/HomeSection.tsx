@@ -17,7 +17,9 @@ export default function HomeSection() {
             </span>
           </h1>
           <p className="mt-4 text-gray-300">
-            Informatikkstudent, og bachelor i Celle og Molekylær Biologi
+            Informatikk bachelor-student med bachelor i Celle og Molekylær Biologi.
+            <br />
+            Erfaring med prosjektledelse, koordinering av frivillige, logistikkplanlegging og gjennomføring av sosiale arrangementer. Kompetanse innen programmeringsspråk som Java, Python, HTML/CSS/JavaScript, TypeScript og R, samt teknologier som React, Next.js, Tailwind, SpringBoot og verktøy som Git, Docker og Scrum. Har erfaring med kundebehandling, mersalg og tilrettelegging av behov. Erfaring med fasilitering av gruppearbeid og dynamikk. 
           </p>
           <br />
           <br />
