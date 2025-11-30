@@ -21,9 +21,9 @@ export default function HomeSection() {
             <br />
             <br />
             Mitt navn er Aurora Meilian Karlsen, og jeg studerer 3. året på
-              bachelor i informatikk ved NTNU. Jeg er en utvikler som liker å
-              bygge enkle og brukervennlige løsninger. 
-            </p>
+            bachelor i informatikk ved NTNU. Jeg er en utvikler som liker å
+            bygge enkle og brukervennlige løsninger.
+          </p>
           <br />
           <br />
           <br />

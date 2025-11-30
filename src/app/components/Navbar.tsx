@@ -68,7 +68,6 @@ export default function Navbar() {
       ),
       href: '#game',
     },
-    
   ];
 
   return (
