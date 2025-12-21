@@ -5,37 +5,7 @@ export default function Footer() {
     <footer className="bg-gray-950/70 backdrop-blur border-t border-gray-800">
       <div className="mx-auto max-w-5xl px-8 py-8">
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
-          {/* Navigation links */}
-          <nav
-            aria-label="Bunntekst navigasjon"
-            className="flex flex-wrap justify-center gap-6 text-sm"
-          >
-            <a
-              href="#home"
-              className="text-white/60 hover:text-indigo-400 transition-colors"
-            >
-              Hjem
-            </a>
-            <a
-              href="#contact"
-              className="text-white/60 hover:text-indigo-400 transition-colors"
-            >
-              Kontakt
-            </a>
-            <a
-              href="#about"
-              className="text-white/60 hover:text-indigo-400 transition-colors"
-            >
-              Om meg
-            </a>
-            <a
-              href="#skills"
-              className="text-white/60 hover:text-indigo-400 transition-colors"
-            >
-              Ferdigheter
-            </a>
-          </nav>
-
+          
           {/* Social links */}
           <div className="flex items-center gap-5">
             <a
