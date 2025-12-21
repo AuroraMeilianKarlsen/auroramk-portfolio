@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 export const metadata: Metadata = {
   title: 'Portfolio',
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body className="bg-gray-900">
         <Navbar />
         <div className="pt-16">{children}</div>
+        <Footer />
       </body>
     </html>
   );
