@@ -28,14 +28,25 @@ export default function HomeSection() {
           <br />
           <br />
           <br />
-          <h2 className="text-2xl font-semibold">Curriculum Vitae</h2>
-          <p className="text-gray-300">Download my CV in PDF format.</p>
           <a
             href="/AuroraMeilianKarlsenCV.pdf"
             download="Aurora_Meilian_Karlsen_CV.pdf"
-            className="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-colors font-semibold"
+            className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 text-white rounded-xl transition-all duration-300 font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5"
             aria-label="Download CV in PDF format"
           >
+            <svg
+              className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-0.5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              />
+            </svg>
             Download CV
           </a>
         </div>
