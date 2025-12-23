@@ -14,13 +14,11 @@ export default function PictureGallerySection() {
       <div className="mx-auto max-w-3xl">
         <br />
         <p className="mt-4 text-gray-300">
-          Jeg er fortiden på utveksling i Italia. Under erasmus oppholdet mitt
-          studerer jeg på Universitetet i Padova, men jeg har også fått mulighet
-          til å reise til mange andre byer!
-          <br />
-          <br />
-          Her har jeg også blitt glad i å ta bilder, her er noen av mine
-          nyligste knips fra Italia
+          I am currently on exchange in Italy. During my Erasmus stay I am
+          studying at the University of Padova, but I have also had the
+          opportunity to travel to many other cities! Here I have also developed
+          a love for taking photos, here are some of my most recent snaps from
+          Italy:
         </p>
 
         <div className="mt-8 flex justify-center">

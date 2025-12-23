@@ -5,17 +5,17 @@ export default function ContactSection() {
     <section
       id="contact"
       className="px-6 py-12 scroll-mt-20"
-      aria-label="Kontakt"
+      aria-label="Contact"
     >
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-3xl font-semibold">Kontakt</h2>
+        <h2 className="text-3xl font-semibold">Contact</h2>
 
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
           <Card className="text-center">
             <a
               href="mailto:aurora.mk@icloud.com"
               className="text-blue-400 hover:text-blue-300 transition-colors block"
-              aria-label="Send e-post til aurora.mk@icloud.com"
+              aria-label="Send email to aurora.mk@icloud.com"
             >
               aurora.mk@icloud.com
             </a>
@@ -26,7 +26,7 @@ export default function ContactSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-300 transition-colors block"
-              aria-label="Besøk LinkedIn-profil"
+              aria-label="Visit LinkedIn profile"
             >
               LinkedIn
             </a>
@@ -37,7 +37,7 @@ export default function ContactSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-300 transition-colors block"
-              aria-label="Besøk GitHub-profil"
+              aria-label="Visit GitHub profile"
             >
               GitHub
             </a>

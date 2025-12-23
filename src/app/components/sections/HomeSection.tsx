@@ -6,44 +6,54 @@ export default function HomeSection() {
     <section
       id="home"
       className="min-h-screen flex items-center px-6 scroll-mt-20"
-      aria-label="Hjem"
+      aria-label="Home"
     >
       <div className="mx-auto grid w-full max-w-5xl items-center gap-10 lg:grid-cols-2">
         <div className="text-center lg:text-left">
           <h1 className="text-4xl font-bold">
-            Hei,{' '}
+            Hi,{' '}
             <span className="inline-block">
               <ClientTyping />
             </span>
           </h1>
           <p className="mt-4 text-gray-300">
-            Informatikkstudent med bachelor i Celle og Molekylær Biologi.
+            Computer Science student with a background in Cell and Molecular
+            Biology.
             <br />
             <br />
-            Mitt navn er Aurora Meilian Karlsen, og jeg studerer 3. året på
-            bachelor i informatikk ved NTNU. Jeg er en utvikler som liker å
-            bygge enkle og brukervennlige løsninger.
+            My name is Aurora Meilian Karlsen, and I&apos;m in my 3rd year of a
+            Bachelor&apos;s in Computer Science at NTNU. I&apos;m a developer
+            who enjoys building simple and user-friendly solutions.
           </p>
           <br />
           <br />
           <br />
-          <h2 className="text-2xl font-semibold">Curriculum Vitae</h2>
-          <p className="text-gray-300">
-            Her kan du laste ned min CV i PDF format.
-          </p>
           <a
             href="/AuroraMeilianKarlsenCV.pdf"
             download="Aurora_Meilian_Karlsen_CV.pdf"
-            className="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-colors font-semibold"
-            aria-label="Last ned CV i PDF format"
+            className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 text-white rounded-xl transition-all duration-300 font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5"
+            aria-label="Download CV in PDF format"
           >
-            Last ned CV
+            <svg
+              className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-0.5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              />
+            </svg>
+            Download CV
           </a>
         </div>
         <div className="flex justify-center lg:justify-end">
           <Image
             src="/AuroraMKarlsenPortrait.png"
-            alt="Profilbilde av Aurora Meilian Karlsen"
+            alt="Profile picture of Aurora Meilian Karlsen"
             width={440}
             height={560}
             priority
