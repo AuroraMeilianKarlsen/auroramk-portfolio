@@ -5,13 +5,12 @@ export default function Footer() {
     <footer className="bg-gray-950/70 backdrop-blur border-t border-gray-800">
       <div className="mx-auto max-w-5xl px-8 py-8">
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
-          
           {/* Social links */}
           <div className="flex items-center gap-5">
             <a
               href="mailto:aurora.mk@icloud.com"
               className="text-white/60 hover:text-indigo-400 transition-colors"
-              aria-label="Send e-post"
+              aria-label="Send email"
             >
               <svg
                 className="w-5 h-5"
@@ -65,7 +64,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-8 pt-6 border-t border-gray-800 text-center">
           <p className="text-sm text-white/40">
-            © {currentYear} © 2025 Aurora Meilian Karlsen. Alle rettigheter reservert.
+            © {currentYear} Aurora Meilian Karlsen. All rights reserved.
           </p>
         </div>
       </div>

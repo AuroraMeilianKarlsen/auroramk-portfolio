@@ -7,7 +7,14 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState<string>('home');
 
   useEffect(() => {
-    const sections = ['home', 'contact', 'about', 'skills', 'game'];
+    const sections = [
+      'home',
+      'contact',
+      'about',
+      'education',
+      'skills',
+      'game',
+    ];
 
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 150; // Offset for navbar and some padding
@@ -55,6 +62,7 @@ export default function Navbar() {
     { id: 'home', label: 'Home', href: '#home' },
     { id: 'contact', label: 'Contact', href: '#contact' },
     { id: 'about', label: 'About', href: '#about' },
+    { id: 'education', label: 'Education', href: '#education' },
     { id: 'skills', label: 'Skills', href: '#skills' },
     {
       id: 'game',
@@ -73,7 +81,7 @@ export default function Navbar() {
   return (
     <nav
       className="fixed top-0 left-0 right-0 z-50 bg-gray-950/70 backdrop-blur"
-      aria-label="Hovednavigasjon"
+      aria-label="Main navigation"
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-8 py-5">
         <div className="flex space-x-10 text-lg" role="list">
@@ -90,7 +98,7 @@ export default function Navbar() {
                 aria-label={
                   typeof link.label === 'string'
                     ? link.label
-                    : `Naviger til ${link.id} seksjon`
+                    : `Navigate to ${link.id} section`
                 }
               >
                 {link.label}

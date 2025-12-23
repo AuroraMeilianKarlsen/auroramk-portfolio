@@ -4,6 +4,7 @@ import { useState } from 'react';
 import DinoGameModal from './components/DinoGameModal';
 import HomeSection from './components/sections/HomeSection';
 import AboutSection from './components/sections/AboutSection';
+import EducationSection from './components/sections/EducationSection';
 import PictureGallerySection from './components/sections/PictureGallerySection';
 import SkillsSection from './components/sections/SkillsSection';
 import GameSection from './components/sections/GameSection';
@@ -17,6 +18,7 @@ export default function Home() {
       <HomeSection />
       <ContactSection />
       <AboutSection />
+      <EducationSection />
       <PictureGallerySection />
       <SkillsSection />
       <GameSection onOpenGame={() => setIsGameOpen(true)} />

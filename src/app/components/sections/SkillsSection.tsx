@@ -77,7 +77,11 @@ const tools: Skill[] = [
     icon: '/skillLogo/maven-original.svg',
     iconAlt: 'Maven logo',
   },
-  { name: 'Vite', icon: '/skillLogo/vitejs-original.svg', iconAlt: 'Vite logo' },
+  {
+    name: 'Vite',
+    icon: '/skillLogo/vitejs-original.svg',
+    iconAlt: 'Vite logo',
+  },
   {
     name: 'Figma',
     icon: '/skillLogo/figma-original.svg',
@@ -126,17 +130,15 @@ function SkillCard({ skill }: { skill: Skill }) {
 
 export default function SkillsSection() {
   return (
-    <section
-      id="skills"
-      className="px-6 py-8 scroll-mt-20"
-      aria-label="Ferdigheter"
-    >
+    <section id="skills" className="px-6 py-8 scroll-mt-20" aria-label="Skills">
       <div className="mx-auto max-w-2xl">
         <h2 className="text-2xl font-semibold">Skills</h2>
 
-        {/* Språk */}
+        {/* Languages */}
         <div className="mt-4">
-          <h3 className="text-base font-medium text-gray-200 mb-2">Språk</h3>
+          <h3 className="text-base font-medium text-gray-200 mb-2">
+            Languages
+          </h3>
           <div className="grid grid-cols-4 gap-3 sm:grid-cols-5 md:grid-cols-7">
             {languages.map((skill) => (
               <SkillCard key={skill.name} skill={skill} />
@@ -144,10 +146,10 @@ export default function SkillsSection() {
           </div>
         </div>
 
-        {/* Teknologier */}
+        {/* Technologies */}
         <div className="mt-6">
           <h3 className="text-base font-medium text-gray-200 mb-2">
-            Teknologier
+            Technologies
           </h3>
           <div className="grid grid-cols-4 gap-3 sm:grid-cols-5 md:grid-cols-7">
             {technologies.map((skill) => (
@@ -156,9 +158,9 @@ export default function SkillsSection() {
           </div>
         </div>
 
-        {/* Verktøy */}
+        {/* Tools */}
         <div className="mt-6">
-          <h3 className="text-base font-medium text-gray-200 mb-2">Verktøy</h3>
+          <h3 className="text-base font-medium text-gray-200 mb-2">Tools</h3>
           <div className="grid grid-cols-4 gap-3 sm:grid-cols-5 md:grid-cols-7">
             {tools.map((skill) => (
               <SkillCard key={skill.name} skill={skill} />
