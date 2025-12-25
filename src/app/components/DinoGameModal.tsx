@@ -653,6 +653,7 @@ export default function DinoGameModal({ isOpen, onClose }: DinoGameModalProps) {
               !gameOver &&
               'SPACE or ⬆ Arrow: Jump | ⬇ Arrow: Duck | ESC: Close'}
           </div>
+          <div className={styles.credit}>Inspired by Chrome Dino Game</div>
         </div>
       </div>
     </div>
