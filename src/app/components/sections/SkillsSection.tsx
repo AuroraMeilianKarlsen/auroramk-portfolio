@@ -27,7 +27,7 @@ const languages: Skill[] = [
     iconAlt: 'TypeScript logo',
   },
   { name: 'R', icon: '/skillLogo/r-original.svg', iconAlt: 'R logo' },
-  { name: 'SQL', textIcon: 'SQL' },
+  { name: 'SQL', icon: '/skillLogo/sqlLogo.png', iconAlt: 'SQL logo'},
 ];
 
 const technologies: Skill[] = [
@@ -46,11 +46,10 @@ const technologies: Skill[] = [
     icon: '/skillLogo/tailwindcss-original.svg',
     iconAlt: 'Tailwind CSS logo',
   },
-  { name: 'JavaFX', textIcon: 'JFX' },
   {
-    name: 'Spring Boot',
-    icon: '/skillLogo/spring-original.svg',
-    iconAlt: 'Spring Boot logo',
+    name: 'Vite',
+    icon: '/skillLogo/vitejs-original.svg',
+    iconAlt: 'Vite logo',
   },
 ];
 
@@ -71,16 +70,10 @@ const tools: Skill[] = [
     icon: '/skillLogo/intellij-original.svg',
     iconAlt: 'IntelliJ logo',
   },
-  { name: 'RStudio', textIcon: 'R' },
   {
     name: 'Maven',
     icon: '/skillLogo/maven-original.svg',
     iconAlt: 'Maven logo',
-  },
-  {
-    name: 'Vite',
-    icon: '/skillLogo/vitejs-original.svg',
-    iconAlt: 'Vite logo',
   },
   {
     name: 'Figma',
@@ -92,7 +85,6 @@ const tools: Skill[] = [
     icon: '/skillLogo/docker-original.svg',
     iconAlt: 'Docker logo',
   },
-  { name: 'Scrum', textIcon: 'S' },
 ];
 
 function SkillCard({ skill }: { skill: Skill }) {

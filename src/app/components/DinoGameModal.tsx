@@ -625,7 +625,7 @@ export default function DinoGameModal({ isOpen, onClose }: DinoGameModalProps) {
         <button
           onClick={onClose}
           className={styles.closeButton}
-          aria-label="Lukk spill"
+          aria-label="Close game"
         >
           ×
         </button>
@@ -635,7 +635,7 @@ export default function DinoGameModal({ isOpen, onClose }: DinoGameModalProps) {
             Dino Game
           </h2>
           <div className={styles.score}>
-            Poeng: <strong>{score}</strong>
+            Score: <strong>{score}</strong>
           </div>
 
           <canvas
@@ -643,16 +643,17 @@ export default function DinoGameModal({ isOpen, onClose }: DinoGameModalProps) {
             width={800}
             height={200}
             className={styles.canvas}
-            aria-label="Dino spill canvas"
+            aria-label="Dino game canvas"
           />
 
           <div className={styles.instructions}>
-            {!gameStarted && 'Trykk SPACE for å starte'}
-            {gameOver && 'GAME OVER - Trykk SPACE for å prøve igjen'}
+            {!gameStarted && 'Press SPACE to start'}
+            {gameOver && 'GAME OVER - Press SPACE to try again'}
             {gameStarted &&
               !gameOver &&
-              'SPACE eller ⬆ PIL: Hopp | ⬇ PIL: Dukk | ESC: Lukk'}
+              'SPACE or ⬆ Arrow: Jump | ⬇ Arrow: Duck | ESC: Close'}
           </div>
+          <div className={styles.credit}>Inspired by Chrome Dino Game</div>
         </div>
       </div>
     </div>
