@@ -29,7 +29,7 @@ export default function HomeSection() {
           <br />
           <br />
           <a
-            href="/AuroraMeilianKarlsenCV.pdf"
+            href="/AuroraMeilianKarlsenCVNorEng.pdf"
             download="Aurora_Meilian_Karlsen_CV.pdf"
             className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 text-white rounded-xl transition-all duration-300 font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5"
             aria-label="Download CV in PDF format"
