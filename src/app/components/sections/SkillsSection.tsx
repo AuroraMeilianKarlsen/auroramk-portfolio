@@ -72,20 +72,19 @@ function renderSkillItem(item: LogoItem) {
 export default function SkillsSection() {
   return (
     <section id="skills" className="py-8 scroll-mt-20" aria-label="Skills">
-      {/* Title stays centered with max-width */}
-      <div className="mx-auto max-w-2xl px-6">
-        <h2 className="text-2xl font-semibold mb-6">Skills</h2>
+      {/* Title centered */}
+      <div className="text-center mb-6 px-6">
+        <h2 className="text-2xl font-semibold">Skills</h2>
       </div>
 
       {/* Logo loops span full width */}
       <div className="space-y-6">
         {/* Languages */}
         <div>
-
           <div className="h-12 relative w-full">
             <LogoLoop
               logos={languages}
-              speed={80}
+              speed={50}
               direction="left"
               logoHeight={32}
               gap={64}
@@ -100,11 +99,10 @@ export default function SkillsSection() {
 
         {/* Technologies */}
         <div>
-
           <div className="h-12 relative w-full">
             <LogoLoop
               logos={technologies}
-              speed={60}
+              speed={50}
               direction="right"
               logoHeight={32}
               gap={64}
@@ -119,11 +117,10 @@ export default function SkillsSection() {
 
         {/* Tools */}
         <div>
-
           <div className="h-12 relative w-full">
             <LogoLoop
               logos={tools}
-              speed={70}
+              speed={50}
               direction="left"
               logoHeight={32}
               gap={64}
