@@ -9,36 +9,45 @@ export default function AboutSection() {
     >
       <div className="mx-auto max-w-5xl">
         <h2 className="text-3xl font-semibold mb-6">About Me</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          <div>
+        <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-8 items-start">
+          <div className="space-y-4 lg:pr-4">
             <p className="text-gray-300">
-              I have experience with project management, volunteer coordination,
-              and organizing social initiatives, which has given me a structured
-              and collaborative way of working. I enjoy taking responsibility
-              and making sure things run smoothly. My technical skill set
-              includes Java, Python, TypeScript, JavaScript, HTML/CSS, and R,
-              with hands-on experience using React, Next.js, Tailwind, Spring
-              Boot, Git, Docker, and Scrum. I’m motivated by building clean,
-              user-friendly solutions. Alongside my technical background, I
-              bring strong people skills from customer-facing roles and group
-              work. I thrive in team environments, adapt easily to different
-              needs, and value good communication and collaboration.
+              I enjoy solving problems and building web experiences that combine
+              development, architecture, and design. I’m especially interested
+              in how technical solutions can create intuitive and engaging user
+              experiences, and I like exploring creativity through interactive
+              design.
+            </p>
+            <p className="text-gray-300">
+              With a background in Cell &amp; Molecular Biology, I&apos;ve
+              gained a cross-disciplinary perspective and a broader
+              understanding of how data modeling approaches can solve complex
+              problems.
+            </p>
+            <p className="text-gray-300">
+              Outside of tech, I’m social and actively involved in my student
+              association. here I have gained experience with coordinating
+              volunteers, working with administration and communication to
+              create a inclusive environment. It&apos;s something I truly value
+              and an experience I would never want to be without. It has taught
+              me a lot about collaboration, responsibility, and being part of
+              something bigger.
             </p>
           </div>
-          <div className="flex gap-4">
+          <div className="relative h-72 w-full lg:ml-8">
             <Image
               src="/lab.jpg"
               alt="Laboratory"
               width={250}
               height={250}
-              className="w-56 h-56 rounded-lg object-cover"
+              className="absolute left-0 top-4 w-48 h-48 rounded-lg object-cover shadow-xl z-10 rotate-[-3deg] hover:rotate-0 transition-transform duration-300"
             />
             <Image
               src="/pcAtDT.png"
               alt="Computer at desk"
               width={250}
               height={250}
-              className="w-56 h-56 rounded-lg object-cover"
+              className="absolute left-[155px] top-[74px] w-48 h-48 rounded-lg object-cover shadow-xl rotate-[2deg] hover:rotate-0 transition-transform duration-300"
             />
           </div>
         </div>

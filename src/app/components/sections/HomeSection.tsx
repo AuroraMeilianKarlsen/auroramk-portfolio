@@ -21,9 +21,9 @@ export default function HomeSection() {
             Biology.
             <br />
             <br />
-            My name is Aurora Meilian Karlsen, and I&apos;m in my 3rd year of a
-            Bachelor&apos;s in Computer Science at NTNU. I&apos;m a developer
-            who enjoys building simple and user-friendly solutions.
+            I&apos;m a student developer in my 3rd year of a Bachelor&apos;s in
+            Computer Science at NTNU who enjoys building simple and
+            user-friendly solutions.
           </p>
           <br />
           <br />
@@ -47,7 +47,7 @@ export default function HomeSection() {
                 d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
               />
             </svg>
-            Download CV
+            Download resume
           </a>
         </div>
         <div className="flex justify-center lg:justify-end">

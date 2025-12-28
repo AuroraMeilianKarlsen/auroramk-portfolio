@@ -12,8 +12,8 @@ export default function Home() {
       <ContactSection />
       <AboutSection />
       <EducationSection />
-      <PictureGallerySection />
       <SkillsSection />
+      <PictureGallerySection />
     </main>
   );
 }
