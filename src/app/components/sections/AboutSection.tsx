@@ -43,14 +43,14 @@ export default function AboutSection() {
               alt="Laboratory"
               width={250}
               height={250}
-              className="absolute left-0 top-4 w-48 h-48 rounded-lg object-cover shadow-xl z-10 rotate-[-3deg] hover:rotate-0 transition-transform duration-300"
+              className="absolute left-0 top-4 w-48 h-48 rounded-lg object-cover shadow-xl z-10 rotate-[-3deg]"
             />
             <Image
               src="/pcAtDT.png"
               alt="Computer at desk"
               width={250}
               height={250}
-              className="absolute left-[155px] top-[74px] w-48 h-48 rounded-lg object-cover shadow-xl rotate-[2deg] hover:rotate-0 transition-transform duration-300"
+              className="absolute left-[155px] top-[74px] w-48 h-48 rounded-lg object-cover shadow-xl rotate-[2deg]"
             />
           </div>
         </div>
