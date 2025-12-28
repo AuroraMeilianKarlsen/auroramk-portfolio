@@ -1,162 +1,135 @@
-import Image from 'next/image';
-import Card from '../Card';
+'use client';
 
-interface Skill {
-  name: string;
-  icon?: string;
-  iconAlt?: string;
-  textIcon?: string;
+import LogoLoop, { LogoItem } from '../LogoLoop';
+
+interface SkillItem {
+  src: string;
+  alt: string;
+  title: string;
 }
 
-const languages: Skill[] = [
-  { name: 'Java', icon: '/skillLogo/java-original.svg', iconAlt: 'Java logo' },
+const languages: SkillItem[] = [
+  { src: '/skillLogo/java-original.svg', alt: 'Java', title: 'Java' },
+  { src: '/skillLogo/python-original.svg', alt: 'Python', title: 'Python' },
+  { src: '/skillLogo/css3-original.svg', alt: 'CSS', title: 'CSS' },
   {
-    name: 'Python',
-    icon: '/skillLogo/python-original.svg',
-    iconAlt: 'Python logo',
-  },
-  { name: 'CSS', icon: '/skillLogo/css3-original.svg', iconAlt: 'CSS3 logo' },
-  {
-    name: 'JavaScript',
-    icon: '/skillLogo/javascript-original.svg',
-    iconAlt: 'JavaScript logo',
+    src: '/skillLogo/javascript-original.svg',
+    alt: 'JavaScript',
+    title: 'JavaScript',
   },
   {
-    name: 'TypeScript',
-    icon: '/skillLogo/typescript-original.svg',
-    iconAlt: 'TypeScript logo',
+    src: '/skillLogo/typescript-original.svg',
+    alt: 'TypeScript',
+    title: 'TypeScript',
   },
-  { name: 'R', icon: '/skillLogo/r-original.svg', iconAlt: 'R logo' },
-  { name: 'SQL', icon: '/skillLogo/sqlLogo.png', iconAlt: 'SQL logo'},
+  { src: '/skillLogo/r-original.svg', alt: 'R', title: 'R' },
+  { src: '/skillLogo/sqlLogo.png', alt: 'SQL', title: 'SQL' },
 ];
 
-const technologies: Skill[] = [
+const technologies: SkillItem[] = [
+  { src: '/skillLogo/react-original.svg', alt: 'React', title: 'React' },
+  { src: '/skillLogo/nextjs-original.svg', alt: 'Next.js', title: 'Next.js' },
   {
-    name: 'React',
-    icon: '/skillLogo/react-original.svg',
-    iconAlt: 'React logo',
+    src: '/skillLogo/tailwindcss-original.svg',
+    alt: 'Tailwind CSS',
+    title: 'Tailwind CSS',
   },
-  {
-    name: 'Next.js',
-    icon: '/skillLogo/nextjs-original.svg',
-    iconAlt: 'Next.js logo',
-  },
-  {
-    name: 'Tailwind',
-    icon: '/skillLogo/tailwindcss-original.svg',
-    iconAlt: 'Tailwind CSS logo',
-  },
-  {
-    name: 'Vite',
-    icon: '/skillLogo/vitejs-original.svg',
-    iconAlt: 'Vite logo',
-  },
+  { src: '/skillLogo/vitejs-original.svg', alt: 'Vite', title: 'Vite' },
 ];
 
-const tools: Skill[] = [
-  { name: 'Git', icon: '/skillLogo/git-original.svg', iconAlt: 'Git logo' },
+const tools: SkillItem[] = [
+  { src: '/skillLogo/git-original.svg', alt: 'Git', title: 'Git' },
+  { src: '/skillLogo/github-light.svg', alt: 'GitHub', title: 'GitHub' },
+  { src: '/skillLogo/vscode-original.svg', alt: 'VS Code', title: 'VS Code' },
   {
-    name: 'GitHub',
-    icon: '/skillLogo/github-original.svg',
-    iconAlt: 'GitHub logo',
+    src: '/skillLogo/intellij-original.svg',
+    alt: 'IntelliJ',
+    title: 'IntelliJ',
   },
-  {
-    name: 'VS Code',
-    icon: '/skillLogo/vscode-original.svg',
-    iconAlt: 'VS Code logo',
-  },
-  {
-    name: 'IntelliJ',
-    icon: '/skillLogo/intellij-original.svg',
-    iconAlt: 'IntelliJ logo',
-  },
-  {
-    name: 'Maven',
-    icon: '/skillLogo/maven-original.svg',
-    iconAlt: 'Maven logo',
-  },
-  {
-    name: 'Figma',
-    icon: '/skillLogo/figma-original.svg',
-    iconAlt: 'Figma logo',
-  },
-  {
-    name: 'Docker',
-    icon: '/skillLogo/docker-original.svg',
-    iconAlt: 'Docker logo',
-  },
+  { src: '/skillLogo/maven-original.svg', alt: 'Maven', title: 'Maven' },
+  { src: '/skillLogo/figma-original.svg', alt: 'Figma', title: 'Figma' },
+  { src: '/skillLogo/docker-original.svg', alt: 'Docker', title: 'Docker' },
 ];
 
-function SkillCard({ skill }: { skill: Skill }) {
+// Custom render function to show logo + name
+function renderSkillItem(item: LogoItem) {
+  const skill = item as SkillItem;
   return (
-    <Card className="flex flex-col items-center gap-1 p-2">
-      {skill.icon ? (
-        <Image
-          src={skill.icon}
-          alt={skill.iconAlt || `${skill.name} logo`}
-          width={32}
-          height={32}
-          className="h-8 w-8"
-        />
-      ) : (
-        <div className="h-8 w-8 flex items-center justify-center bg-gray-700 rounded">
-          <span
-            className={`font-bold text-white ${
-              skill.textIcon === 'SQL'
-                ? 'text-[10px]'
-                : skill.textIcon === 'R' && skill.name === 'R'
-                  ? 'text-sm'
-                  : skill.textIcon === 'J'
-                    ? 'text-base'
-                    : 'text-[10px]'
-            }`}
-          >
-            {skill.textIcon}
-          </span>
-        </div>
-      )}
-      <span className="text-[10px] text-gray-300">{skill.name}</span>
-    </Card>
+    <div className="flex items-center gap-2 group/skill">
+      <img
+        src={skill.src}
+        alt={skill.alt}
+        className="h-8 w-8 object-contain transition-transform duration-300 group-hover/skill:scale-110"
+        draggable={false}
+      />
+      <span className="text-sm text-gray-300 whitespace-nowrap">
+        {skill.title}
+      </span>
+    </div>
   );
 }
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="px-6 py-8 scroll-mt-20" aria-label="Skills">
-      <div className="mx-auto max-w-2xl">
+    <section id="skills" className="py-8 scroll-mt-20" aria-label="Skills">
+      {/* Title centered */}
+      <div className="text-center mb-6 px-6">
         <h2 className="text-2xl font-semibold">Skills</h2>
+      </div>
 
+      {/* Logo loops span full width */}
+      <div className="space-y-6">
         {/* Languages */}
-        <div className="mt-4">
-          <h3 className="text-base font-medium text-gray-200 mb-2">
-            Languages
-          </h3>
-          <div className="grid grid-cols-4 gap-3 sm:grid-cols-5 md:grid-cols-7">
-            {languages.map((skill) => (
-              <SkillCard key={skill.name} skill={skill} />
-            ))}
+        <div>
+          <div className="h-12 relative w-full">
+            <LogoLoop
+              logos={languages}
+              speed={50}
+              direction="left"
+              logoHeight={32}
+              gap={64}
+              hoverSpeed={0}
+              fadeOut
+              fadeOutColor="#111827"
+              ariaLabel="Programming languages"
+              renderItem={renderSkillItem}
+            />
           </div>
         </div>
 
         {/* Technologies */}
-        <div className="mt-6">
-          <h3 className="text-base font-medium text-gray-200 mb-2">
-            Technologies
-          </h3>
-          <div className="grid grid-cols-4 gap-3 sm:grid-cols-5 md:grid-cols-7">
-            {technologies.map((skill) => (
-              <SkillCard key={skill.name} skill={skill} />
-            ))}
+        <div>
+          <div className="h-12 relative w-full">
+            <LogoLoop
+              logos={technologies}
+              speed={50}
+              direction="right"
+              logoHeight={32}
+              gap={64}
+              hoverSpeed={0}
+              fadeOut
+              fadeOutColor="#111827"
+              ariaLabel="Frontend technologies"
+              renderItem={renderSkillItem}
+            />
           </div>
         </div>
 
         {/* Tools */}
-        <div className="mt-6">
-          <h3 className="text-base font-medium text-gray-200 mb-2">Tools</h3>
-          <div className="grid grid-cols-4 gap-3 sm:grid-cols-5 md:grid-cols-7">
-            {tools.map((skill) => (
-              <SkillCard key={skill.name} skill={skill} />
-            ))}
+        <div>
+          <div className="h-12 relative w-full">
+            <LogoLoop
+              logos={tools}
+              speed={50}
+              direction="left"
+              logoHeight={32}
+              gap={64}
+              hoverSpeed={0}
+              fadeOut
+              fadeOutColor="#111827"
+              ariaLabel="Development tools"
+              renderItem={renderSkillItem}
+            />
           </div>
         </div>
       </div>

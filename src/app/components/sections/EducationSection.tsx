@@ -1,11 +1,27 @@
+'use client';
+
+import { useState } from 'react';
+
+interface Education {
+  period: string;
+  degree: string;
+  institution: string;
+  description: string;
+  details: string;
+}
+
 export default function EducationSection() {
-  const education = [
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
+  const education: Education[] = [
     {
       period: '2023 - 2026',
       degree: "Bachelor's in Computer Science",
       institution: 'NTNU',
       description:
-        'Focusing on software development, algorithms, and building user-friendly applications.',
+        'Effective, safe and flexible software development, algorithms, building user-friendly applications.',
+      details:
+        "Programming, algorithms, data structures, and software development methodology. You gain skills in building secure, user-friendly systems for web, mobile, and desktop applications. The program covers database design, network communication, data-driven software development and human-computer interaction, preparing you to solve complex technical problems while understanding technology's role in society.",
     },
     {
       period: '2020 - 2023',
@@ -13,8 +29,14 @@ export default function EducationSection() {
       institution: 'NTNU',
       description:
         'Specialization in Cell and Molecular Biology, providing a strong foundation in scientific research and analytical thinking.',
+      details:
+        'Understanding life from molecular processes to ecosystems. Specialization in cell and molecular biology provides knowledge of how organisms function at the cellular level, including physiology, genetics, and ecotoxicology. A fundamental understanding of biological systems and how these systems inspired neural network architectures. You develop practical lab skills, scientific methodology, and the ability to contribute to sustainable development and environmental conservation.',
     },
   ];
+
+  const toggleExpand = (index: number) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
 
   return (
     <section
@@ -55,6 +77,48 @@ export default function EducationSection() {
                     {item.institution}
                   </p>
                   <p className="text-gray-300 text-sm">{item.description}</p>
+
+                  {/* Read more section */}
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      expandedIndex === index
+                        ? 'max-h-96 opacity-100 mt-4'
+                        : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <div className="pt-3 border-t border-gray-700/50">
+                      <p className="text-sm text-gray-400 font-medium mb-2">
+                        What you learn:
+                      </p>
+                      <p className="text-gray-300 text-sm leading-relaxed">
+                        {item.details}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Toggle button */}
+                  <button
+                    onClick={() => toggleExpand(index)}
+                    className="mt-3 text-sm text-indigo-400 hover:text-indigo-300 transition-colors flex items-center gap-1"
+                    aria-expanded={expandedIndex === index}
+                  >
+                    {expandedIndex === index ? 'Read less' : 'Read more'}
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-300 ${
+                        expandedIndex === index ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
                 </div>
               </div>
             ))}
@@ -64,4 +128,3 @@ export default function EducationSection() {
     </section>
   );
 }
-
