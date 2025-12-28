@@ -1,3 +1,7 @@
+'use client';
+
+import { useLanguage } from '../../context/LanguageContext';
+
 // Email icon (envelope)
 const EmailIcon = () => (
   <svg
@@ -71,6 +75,8 @@ function ContactItem({
 }
 
 export default function ContactSection() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="contact"
@@ -78,7 +84,9 @@ export default function ContactSection() {
       aria-label="Contact"
     >
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-3xl font-semibold text-center">Contact</h2>
+        <h2 className="text-3xl font-semibold text-center">
+          {t('contact.title', 'Contact')}
+        </h2>
 
         <div className="mt-8 flex justify-center gap-12">
           <ContactItem

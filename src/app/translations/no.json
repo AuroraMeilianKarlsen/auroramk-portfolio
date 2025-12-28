@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "home": "Hjem",
+    "contact": "Kontakt",
+    "about": "Om meg",
+    "education": "Utdanning",
+    "skills": "Ferdigheter"
+  },
+  "home": {
+    "greeting": "Hei,",
+    "typingTexts": ["jeg er Aurora Meilian Karlsen", "velkommen til min side!"],
+    "description1": "Informatikkstudent med bakgrunn i celle- og molekylærbiologi.",
+    "description2": "Jeg er en utvikler student på mitt 3. år av en bachelorgrad i informatikk ved NTNU som liker å bygge enkle og brukervennlige løsninger.",
+    "downloadCV": "Last ned CV"
+  },
+  "about": {
+    "title": "Om meg",
+    "p1": "Jeg liker å løse problemer og bygge nettopplevelser som kombinerer utvikling, arkitektur og design. Jeg er spesielt interessert i hvordan tekniske løsninger kan skape intuitive og engasjerende brukeropplevelser, og jeg liker å utforske kreativitet gjennom interaktiv design.",
+    "p2": "Med bakgrunn i celle- og molekylærbiologi har jeg fått et tverrfaglig perspektiv og en bredere forståelse av hvordan datamodelleringsmetoder kan løse komplekse problemer.",
+    "p3": "Utenfor tech er jeg sosial og aktivt involvert i studentforeningen min. Her har jeg fått erfaring med å koordinere frivillige, jobbe med administrasjon og kommunikasjon for å skape et inkluderende miljø. Det er noe jeg virkelig verdsetter og en erfaring jeg aldri ville vært foruten. Det har lært meg mye om samarbeid, ansvar og å være en del av noe større."
+  },
+  "contact": {
+    "title": "Kontakt"
+  },
+  "education": {
+    "title": "Utdanning",
+    "degree1": "Bachelor i informatikk",
+    "desc1": "Effektiv, sikker og fleksibel programvareutvikling, algoritmer, bygging av brukervennlige applikasjoner.",
+    "details1": "Programmering, algoritmer, datastrukturer og programvareutviklingsmetodikk. Du får ferdigheter i å bygge sikre, brukervennlige systemer for web-, mobil- og desktop-applikasjoner. Programmet dekker databasedesign, nettverkskommunikasjon, datadrevet programvareutvikling og menneske-maskin-interaksjon, og forbereder deg på å løse komplekse tekniske problemer samtidig som du forstår teknologiens rolle i samfunnet.",
+    "degree2": "Bachelor i biologi",
+    "desc2": "Spesialisering i celle- og molekylærbiologi, som ga et sterkt grunnlag i vitenskapelig forskning og analytisk tenkning.",
+    "details2": "Forståelse av liv fra molekylære prosesser til økosystemer. Spesialisering i celle- og molekylærbiologi gir kunnskap om hvordan organismer fungerer på cellenivå, inkludert fysiologi, genetikk og økotoksikologi. En grunnleggende forståelse av biologiske systemer og hvordan disse systemene inspirerte nevrale nettverksarkitekturer. Du utvikler praktiske laboratorieferdigheter, vitenskapelig metodikk og evnen til å bidra til bærekraftig utvikling og miljøvern.",
+    "whatYouLearn": "Hva du lærer:",
+    "readMore": "Les mer",
+    "readLess": "Les mindre"
+  },
+  "skills": {
+    "title": "Ferdigheter",
+    "languages": "Språk",
+    "technologies": "Teknologier",
+    "tools": "Verktøy"
+  },
+  "pictureGallery": {
+    "description": "Under mitt Erasmus-opphold studerer jeg ved Universitetet i Padova, men jeg har også hatt muligheten til å reise til mange andre byer! Jeg har også utviklet en lidenskap for å ta bilder. Her er noen bilder fra mitt Erasmus-opphold i Italia (som en unnskyldning for å lage et bildegalleri)."
+  },
+  "footer": {
+    "copyright": "Alle rettigheter reservert."
+  }
+}
