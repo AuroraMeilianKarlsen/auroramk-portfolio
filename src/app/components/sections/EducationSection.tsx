@@ -13,15 +13,27 @@ export default function EducationSection() {
       period: '2023 - 2026',
       degree: t('education.degree1', "Bachelor's in Computer Science"),
       institution: 'NTNU',
-      description: t('education.desc1', 'Effective, safe and flexible software development, algorithms, building user-friendly applications.'),
-      details: t('education.details1', "Programming, algorithms, data structures, and software development methodology. You gain skills in building secure, user-friendly systems for web, mobile, and desktop applications. The program covers database design, network communication, data-driven software development and human-computer interaction, preparing you to solve complex technical problems while understanding technology's role in society."),
+      description: t(
+        'education.desc1',
+        'Effective, safe and flexible software development, algorithms, building user-friendly applications.'
+      ),
+      details: t(
+        'education.details1',
+        "Programming, algorithms, data structures, and software development methodology. You gain skills in building secure, user-friendly systems for web, mobile, and desktop applications. The program covers database design, network communication, data-driven software development and human-computer interaction, preparing you to solve complex technical problems while understanding technology's role in society."
+      ),
     },
     {
       period: '2020 - 2023',
       degree: t('education.degree2', "Bachelor's in Biology"),
       institution: 'NTNU',
-      description: t('education.desc2', 'Specialization in Cell and Molecular Biology, providing a strong foundation in scientific research and analytical thinking.'),
-      details: t('education.details2', 'Understanding life from molecular processes to ecosystems. Specialization in cell and molecular biology provides knowledge of how organisms function at the cellular level, including physiology, genetics, and ecotoxicology. A fundamental understanding of biological systems and how these systems inspired neural network architectures. You develop practical lab skills, scientific methodology, and the ability to contribute to sustainable development and environmental conservation.'),
+      description: t(
+        'education.desc2',
+        'Specialization in Cell and Molecular Biology, providing a strong foundation in scientific research and analytical thinking.'
+      ),
+      details: t(
+        'education.details2',
+        'Understanding life from molecular processes to ecosystems. Specialization in cell and molecular biology provides knowledge of how organisms function at the cellular level, including physiology, genetics, and ecotoxicology. A fundamental understanding of biological systems and how these systems inspired neural network architectures. You develop practical lab skills, scientific methodology, and the ability to contribute to sustainable development and environmental conservation.'
+      ),
     },
   ];
 
@@ -95,8 +107,8 @@ export default function EducationSection() {
                     className="mt-3 text-sm text-indigo-400 hover:text-indigo-300 transition-colors flex items-center gap-1"
                     aria-expanded={expandedIndex === index}
                   >
-                    {expandedIndex === index 
-                      ? t('education.readLess', 'Read less') 
+                    {expandedIndex === index
+                      ? t('education.readLess', 'Read less')
                       : t('education.readMore', 'Read more')}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${

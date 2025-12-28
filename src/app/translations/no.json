@@ -8,12 +8,9 @@
   },
   "home": {
     "greeting": "Hei,",
-    "typingTexts": [
-      "Jeg er Aurora Meilian Karlsen",
-      "velkommen til siden min!"
-    ],
+    "typingTexts": ["jeg er Aurora Meilian Karlsen", "velkommen til min side!"],
     "description1": "Informatikkstudent med bakgrunn i celle- og molekylærbiologi.",
-    "description2": "Jeg er en studentutvikler på mitt 3. år av en bachelorgrad i informatikk ved NTNU som liker å bygge enkle og brukervennlige løsninger.",
+    "description2": "Jeg er en utvikler student på mitt 3. år av en bachelorgrad i informatikk ved NTNU som liker å bygge enkle og brukervennlige løsninger.",
     "downloadCV": "Last ned CV"
   },
   "about": {
@@ -44,7 +41,7 @@
     "tools": "Verktøy"
   },
   "pictureGallery": {
-    "description": "Under mitt Erasmus-opphold studerer jeg ved Universitetet i Padova, men jeg har også hatt muligheten til å reise til mange andre byer! Jeg har også utviklet en lidenskap for å ta bilder. Nyt noen bilder fra mitt Erasmus-opphold i Italia (som en unnskyldning for å lage et bildegalleri)."
+    "description": "Under mitt Erasmus-opphold studerer jeg ved Universitetet i Padova, men jeg har også hatt muligheten til å reise til mange andre byer! Jeg har også utviklet en lidenskap for å ta bilder. Her er noen bilder fra mitt Erasmus-opphold i Italia (som en unnskyldning for å lage et bildegalleri)."
   },
   "footer": {
     "copyright": "Alle rettigheter reservert."

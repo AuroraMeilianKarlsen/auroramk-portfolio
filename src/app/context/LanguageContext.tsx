@@ -1,6 +1,12 @@
 'use client';
 
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  ReactNode,
+} from 'react';
 import noTranslations from '../translations/no.json';
 
 type Language = 'en' | 'no';
@@ -12,12 +18,16 @@ interface LanguageContextType {
   tArray: (key: string, fallback: string[]) => string[];
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const LanguageContext = createContext<LanguageContextType | undefined>(
+  undefined
+);
 
 // Henter verdi fra JSON med dot-notation, f.eks. "nav.home"
 function getNestedValue(obj: Record<string, unknown>, path: string): unknown {
   return path.split('.').reduce((current, key) => {
-    return current && typeof current === 'object' ? (current as Record<string, unknown>)[key] : undefined;
+    return current && typeof current === 'object'
+      ? (current as Record<string, unknown>)[key]
+      : undefined;
   }, obj as unknown);
 }
 
@@ -39,7 +49,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   }, [language]);
 
   const toggleLanguage = () => {
-    setLanguage(prev => (prev === 'en' ? 'no' : 'en'));
+    setLanguage((prev) => (prev === 'en' ? 'no' : 'en'));
   };
 
   // t() - returnerer norsk oversettelse hvis språk er 'no', ellers fallback (engelsk)
@@ -70,4 +80,3 @@ export function useLanguage() {
   }
   return context;
 }
-

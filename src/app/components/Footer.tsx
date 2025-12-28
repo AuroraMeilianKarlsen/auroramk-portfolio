@@ -69,7 +69,8 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-8 pt-6 border-t border-gray-800 text-center">
           <p className="text-sm text-white/40">
-            © {currentYear} Aurora Meilian Karlsen. {t('footer.copyright', 'All rights reserved.')}
+            © {currentYear} Aurora Meilian Karlsen.{' '}
+            {t('footer.copyright', 'All rights reserved.')}
           </p>
         </div>
       </div>
