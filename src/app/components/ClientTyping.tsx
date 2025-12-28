@@ -1,13 +1,22 @@
 'use client';
 
 import TextType from './TextType';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function ClientTyping() {
+  const { tArray } = useLanguage();
+
+  // Engelsk som fallback, norsk fra JSON
+  const texts = tArray('home.typingTexts', [
+    'I am Aurora Meilian Karlsen',
+    'welcome to my page!',
+  ]);
+
   return (
     <TextType
       as="span"
       className="text-indigo-400"
-      text={['I am Aurora Meilian Karlsen', 'welcome to my page!']}
+      text={texts}
       typingSpeed={75}
       pauseDuration={1500}
       deletingSpeed={40}

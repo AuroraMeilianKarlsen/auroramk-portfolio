@@ -1,6 +1,7 @@
 'use client';
 
 import LogoLoop, { LogoItem } from '../LogoLoop';
+import { useLanguage } from '../../context/LanguageContext';
 
 interface SkillItem {
   src: string;
@@ -70,11 +71,15 @@ function renderSkillItem(item: LogoItem) {
 }
 
 export default function SkillsSection() {
+  const { t } = useLanguage();
+
   return (
     <section id="skills" className="py-8 scroll-mt-20" aria-label="Skills">
       {/* Title centered */}
       <div className="text-center mb-6 px-6">
-        <h2 className="text-2xl font-semibold">Skills</h2>
+        <h2 className="text-2xl font-semibold">
+          {t('skills.title', 'Skills')}
+        </h2>
       </div>
 
       {/* Logo loops span full width */}

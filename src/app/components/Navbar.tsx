@@ -3,10 +3,12 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import DinoGameModal from './DinoGameModal';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState<string>('home');
   const [isGameOpen, setIsGameOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const sections = ['home', 'contact', 'about', 'education', 'skills'];
@@ -53,12 +55,17 @@ export default function Navbar() {
     };
   }, []);
 
+  // Engelsk som fallback i label, norsk hentes fra JSON via t()
   const navLinks = [
-    { id: 'home', label: 'Home', href: '#home' },
-    { id: 'contact', label: 'Contact', href: '#contact' },
-    { id: 'about', label: 'About', href: '#about' },
-    { id: 'education', label: 'Education', href: '#education' },
-    { id: 'skills', label: 'Skills', href: '#skills' },
+    { id: 'home', label: t('nav.home', 'Home'), href: '#home' },
+    { id: 'contact', label: t('nav.contact', 'Contact'), href: '#contact' },
+    { id: 'about', label: t('nav.about', 'About'), href: '#about' },
+    {
+      id: 'education',
+      label: t('nav.education', 'Education'),
+      href: '#education',
+    },
+    { id: 'skills', label: t('nav.skills', 'Skills'), href: '#skills' },
   ];
 
   return (

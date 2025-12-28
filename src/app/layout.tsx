@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { LanguageProvider } from './context/LanguageContext';
 
 export const metadata: Metadata = {
   title: 'Portfolio',
@@ -38,9 +39,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth bg-gray-900">
       <body className="bg-gray-900">
-        <Navbar />
-        <div className="pt-16">{children}</div>
-        <Footer />
+        <LanguageProvider>
+          <Navbar />
+          <div className="pt-16">{children}</div>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );
