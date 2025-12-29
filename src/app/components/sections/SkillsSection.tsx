@@ -35,7 +35,12 @@ const technologies: SkillItem[] = [
     alt: 'Tailwind CSS',
     title: 'Tailwind CSS',
   },
-  { src: '/skillLogo/vitejs-original.svg', alt: 'Vite', title: 'Vite' },
+  {
+    src: '/skillLogo/spring-original.svg',
+    alt: 'Spring Boot',
+    title: 'Spring Boot',
+  },
+  { src: '/skillLogo/firebase.svg', alt: 'Firebase', title: 'Firebase' },
 ];
 
 const tools: SkillItem[] = [
@@ -47,6 +52,7 @@ const tools: SkillItem[] = [
     alt: 'IntelliJ',
     title: 'IntelliJ',
   },
+  { src: '/skillLogo/vitejs-original.svg', alt: 'Vite', title: 'Vite' },
   { src: '/skillLogo/maven-original.svg', alt: 'Maven', title: 'Maven' },
   { src: '/skillLogo/figma-original.svg', alt: 'Figma', title: 'Figma' },
   { src: '/skillLogo/docker-original.svg', alt: 'Docker', title: 'Docker' },
