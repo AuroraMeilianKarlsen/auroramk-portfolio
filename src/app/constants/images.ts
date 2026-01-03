@@ -1,15 +1,15 @@
 export const pictureGalleryImages = [
-  '/pictureGallery/Skjermbilde 2025-10-28 kl. 23.12.52.jpg',
-  '/pictureGallery/Skjermbilde 2025-10-28 kl. 23.13.06.jpg',
-  '/pictureGallery/Skjermbilde 2025-10-28 kl. 23.13.28.jpg',
-  '/pictureGallery/Skjermbilde 2025-10-28 kl. 23.13.45.jpg',
-  '/pictureGallery/Skjermbilde 2025-10-28 kl. 23.14.29.jpg',
-  '/pictureGallery/Skjermbilde 2025-10-28 kl. 23.14.54.jpg',
-  '/pictureGallery/Skjermbilde 2025-10-28 kl. 23.15.25.jpg',
-  '/pictureGallery/Skjermbilde 2025-10-28 kl. 23.15.41.jpg',
-  '/pictureGallery/Skjermbilde 2025-10-28 kl. 23.14.45.jpg',
-  '/pictureGallery/Skjermbilde 2025-10-28 kl. 23.15.54.jpg',
-  '/pictureGallery/Skjermbilde 2025-10-28 kl. 23.13.55.jpg',
+  '/pictureGallery/masker.jpg',
+  '/pictureGallery/vin.png',
+  '/pictureGallery/tak.png',
+  '/pictureGallery/uffizi.png',
+  '/pictureGallery/plakater.jpg',
+  '/pictureGallery/bologna.png',
+  '/pictureGallery/dolomitt.jpg',
+  '/pictureGallery/lotusblomst.jpg',
+  '/pictureGallery/kanal.jpg',
+  '/pictureGallery/firenze.png',
+  '/pictureGallery/milano.png',
 ] as const;
 
 export const bounceCardsTransformStyles = [
