@@ -13,7 +13,7 @@ export default function PictureGallerySection() {
   return (
     <section
       id="bilder"
-      className="px-6 py-12 scroll-mt-20"
+      className="hidden md:block px-6 py-12 scroll-mt-20"
       aria-label="Bildegalleri"
     >
       <div className="mx-auto max-w-3xl">
