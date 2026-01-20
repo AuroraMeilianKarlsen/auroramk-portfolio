@@ -45,7 +45,7 @@ const technologies: SkillItem[] = [
 
 const tools: SkillItem[] = [
   { src: '/skillLogo/git-original.svg', alt: 'Git', title: 'Git' },
-  { src: '/skillLogo/github-light.svg', alt: 'GitHub', title: 'GitHub' },
+  { src: '/skillLogo/github-original.svg', alt: 'GitHub', title: 'GitHub' },
   { src: '/skillLogo/vscode-original.svg', alt: 'VS Code', title: 'VS Code' },
   {
     src: '/skillLogo/intellij-original.svg',
@@ -69,7 +69,7 @@ function renderSkillItem(item: LogoItem) {
         className="h-8 w-8 object-contain transition-transform duration-300 group-hover/skill:scale-110"
         draggable={false}
       />
-      <span className="text-sm text-gray-300 whitespace-nowrap">
+      <span className="text-sm text-[rgba(31,41,55,0.85)] whitespace-nowrap">
         {skill.title}
       </span>
     </div>
@@ -101,7 +101,7 @@ export default function SkillsSection() {
               gap={64}
               hoverSpeed={0}
               fadeOut
-              fadeOutColor="#111827"
+              fadeOutColor="#fff7d7"
               ariaLabel="Programming languages"
               renderItem={renderSkillItem}
             />
@@ -119,7 +119,7 @@ export default function SkillsSection() {
               gap={64}
               hoverSpeed={0}
               fadeOut
-              fadeOutColor="#111827"
+              fadeOutColor="#fff7d7"
               ariaLabel="Frontend technologies"
               renderItem={renderSkillItem}
             />
@@ -137,7 +137,7 @@ export default function SkillsSection() {
               gap={64}
               hoverSpeed={0}
               fadeOut
-              fadeOutColor="#111827"
+              fadeOutColor="#fff7d7"
               ariaLabel="Development tools"
               renderItem={renderSkillItem}
             />

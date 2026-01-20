@@ -15,7 +15,7 @@ export default function ClientTyping() {
   return (
     <TextType
       as="span"
-      className="text-indigo-400"
+      className="text-[var(--secondary-1)]"
       text={texts}
       typingSpeed={75}
       pauseDuration={1500}

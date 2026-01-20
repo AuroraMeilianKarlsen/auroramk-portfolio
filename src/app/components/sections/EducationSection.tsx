@@ -55,7 +55,7 @@ export default function EducationSection() {
         <div className="relative">
           {/* Vertical timeline line */}
           <div
-            className="absolute left-4 top-2 bottom-2 w-0.5 bg-gray-700"
+            className="absolute left-4 top-2 bottom-2 w-0.5 bg-[rgba(255,135,135,0.5)]"
             aria-hidden="true"
           />
 
@@ -64,24 +64,26 @@ export default function EducationSection() {
               <div key={index} className="relative pl-12">
                 {/* Timeline marker */}
                 <div
-                  className="absolute left-2 top-1.5 w-5 h-5 rounded-full bg-indigo-600 border-4 border-gray-900"
+                  className="absolute left-2 top-1.5 w-5 h-5 rounded-full bg-[var(--secondary-1)] border-4 border-[var(--bg)]"
                   aria-hidden="true"
                 />
 
                 {/* Content card */}
-                <div className="bg-gray-800/50 rounded-lg p-5 hover:bg-gray-800/70 transition-colors border border-gray-700/50">
+                <div className="bg-[rgba(255,135,135,0.08)] rounded-lg p-5 hover:bg-[rgba(255,135,135,0.16)] transition-colors border border-[rgba(255,135,135,0.25)]">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
-                    <h3 className="text-lg font-semibold text-white">
+                    <h3 className="text-lg font-semibold text-[var(--text)]">
                       {item.degree}
                     </h3>
-                    <span className="text-sm text-indigo-400 font-medium">
+                    <span className="text-sm text-[var(--secondary-2)] font-medium">
                       {item.period}
                     </span>
                   </div>
-                  <p className="text-gray-400 text-sm mb-2">
+                  <p className="text-[rgba(31,41,55,0.7)] text-sm mb-2">
                     {item.institution}
                   </p>
-                  <p className="text-gray-300 text-sm">{item.description}</p>
+                  <p className="text-[rgba(31,41,55,0.85)] text-sm">
+                    {item.description}
+                  </p>
 
                   {/* Read more section */}
                   <div
@@ -91,11 +93,11 @@ export default function EducationSection() {
                         : 'max-h-0 opacity-0'
                     }`}
                   >
-                    <div className="pt-3 border-t border-gray-700/50">
-                      <p className="text-sm text-gray-400 font-medium mb-2">
+                    <div className="pt-3 border-t border-[rgba(255,135,135,0.25)]">
+                      <p className="text-sm text-[rgba(31,41,55,0.7)] font-medium mb-2">
                         {t('education.whatYouLearn', 'What you learn:')}
                       </p>
-                      <p className="text-gray-300 text-sm leading-relaxed">
+                      <p className="text-[rgba(31,41,55,0.85)] text-sm leading-relaxed">
                         {item.details}
                       </p>
                     </div>
@@ -104,7 +106,7 @@ export default function EducationSection() {
                   {/* Toggle button */}
                   <button
                     onClick={() => toggleExpand(index)}
-                    className="mt-3 text-sm text-indigo-400 hover:text-indigo-300 transition-colors flex items-center gap-1"
+                    className="mt-3 text-sm text-[var(--secondary-1)] hover:text-[var(--link-hover)] transition-colors flex items-center gap-1"
                     aria-expanded={expandedIndex === index}
                   >
                     {expandedIndex === index

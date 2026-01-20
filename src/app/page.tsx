@@ -7,7 +7,7 @@ import ContactSection from './components/sections/ContactSection';
 
 export default function Home() {
   return (
-    <main className="bg-gray-900 text-white">
+    <main className="bg-[var(--bg)] text-[var(--text)]">
       <HomeSection />
       <ContactSection />
       <AboutSection />
