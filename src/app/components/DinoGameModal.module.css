@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--overlay-70);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,11 +25,11 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--overlay-50);
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: #fff;
+  color: var(--text-inverse);
   line-height: 1;
   padding: 8px 12px;
   border-radius: 8px;
@@ -38,7 +38,7 @@
 }
 
 .closeButton:hover {
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--overlay-70);
 }
 
 .gameFrame {

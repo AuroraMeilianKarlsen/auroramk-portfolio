@@ -11,14 +11,14 @@ function LanguageToggle() {
   return (
     <button
       onClick={toggleLanguage}
-      className="flex items-center gap-1 px-3 py-1.5 bg-[rgba(255,135,135,0.12)] backdrop-blur rounded-full border border-[rgba(255,135,135,0.35)] text-sm font-medium transition-all hover:bg-[rgba(255,135,135,0.2)]"
+      className="flex items-center gap-1 px-3 py-1.5 bg-[rgba(var(--link-hover-rgb),0.12)] backdrop-blur rounded-full border border-[rgba(var(--link-hover-rgb),0.45)] text-sm font-medium transition-all hover:bg-[rgba(var(--link-hover-rgb),0.2)]"
       aria-label={`Switch to ${language === 'en' ? 'Norwegian' : 'English'}`}
     >
       <span
         className={`px-2 py-0.5 rounded-full transition-colors ${
           language === 'en'
-            ? 'bg-[var(--secondary-1)] text-[var(--text)]'
-            : 'text-[rgba(31,41,55,0.65)] hover:text-[var(--text)]'
+            ? 'bg-[var(--link-hover)] text-[var(--text)]'
+            : 'text-[rgba(var(--text-rgb),0.65)] hover:text-[var(--text)]'
         }`}
       >
         EN
@@ -26,8 +26,8 @@ function LanguageToggle() {
       <span
         className={`px-2 py-0.5 rounded-full transition-colors ${
           language === 'no'
-            ? 'bg-[var(--secondary-1)] text-[var(--text)]'
-            : 'text-[rgba(31,41,55,0.65)] hover:text-[var(--text)]'
+            ? 'bg-[var(--link-hover)] text-[var(--text)]'
+            : 'text-[rgba(var(--text-rgb),0.65)] hover:text-[var(--text)]'
         }`}
       >
         NO
@@ -58,7 +58,7 @@ export default function HomeSection() {
               <ClientTyping />
             </span>
           </h1>
-          <p className="mt-4 text-[rgba(31,41,55,0.85)]">
+          <p className="mt-4 text-[rgba(var(--text-rgb),0.85)]">
             {t(
               'home.description1',
               'Computer Science student with a background in Cell and Molecular Biology.'
@@ -76,7 +76,7 @@ export default function HomeSection() {
           <a
             href="/AuroraMeilianKarlsenCV.pdf"
             download="Aurora_Meilian_Karlsen_CV.pdf"
-            className="group inline-flex items-center gap-2 px-6 py-3 bg-[var(--secondary-1)] hover:bg-[rgba(255,135,135,0.85)] text-[var(--text)] rounded-xl transition-all duration-300 font-semibold shadow-lg shadow-[rgba(255,135,135,0.25)] hover:shadow-[rgba(255,135,135,0.4)] hover:-translate-y-0.5"
+            className="group inline-flex items-center gap-2 px-6 py-3 bg-[var(--secondary-1)] hover:bg-[var(--secondary-1)] text-[var(--text)] rounded-xl transition-all duration-300 font-semibold shadow-lg shadow-[rgba(var(--secondary-1-rgb),0.25)] hover:shadow-[rgba(var(--secondary-1-rgb),0.4)] hover:-translate-y-0.5"
             aria-label="Download CV in PDF format"
           >
             <svg

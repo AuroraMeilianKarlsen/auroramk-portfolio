@@ -61,7 +61,7 @@ function ContactItem({
       href={href}
       target={isExternal ? '_blank' : undefined}
       rel={isExternal ? 'noopener noreferrer' : undefined}
-      className="group flex flex-col items-center gap-2 text-[rgba(31,41,55,0.7)] transition-all duration-300 hover:text-[var(--secondary-1)]"
+      className="group flex flex-col items-center gap-2 text-[rgba(var(--text-rgb),0.7)] transition-all duration-300 hover:text-[var(--secondary-1)]"
       aria-label={label}
     >
       <span className="transition-transform duration-300 group-hover:scale-110">

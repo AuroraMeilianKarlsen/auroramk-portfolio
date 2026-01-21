@@ -18,7 +18,7 @@ export default function PictureGallerySection() {
     >
       <div className="mx-auto max-w-3xl">
         <br />
-        <p className="mt-4 text-[rgba(31,41,55,0.85)]">
+        <p className="mt-4 text-[rgba(var(--text-rgb),0.85)]">
           {t(
             'pictureGallery.description',
             "For my Erasmus stay I'm studying at the University of Padova, but I've also had the opportunity to travel to many other cities! I have also developed a passion for taking photos. Enjoy some pictures from my Erasmus stay in Italy (as an excuse to make a picture gallery)."

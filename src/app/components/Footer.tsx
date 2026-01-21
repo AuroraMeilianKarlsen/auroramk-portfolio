@@ -7,7 +7,7 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-[var(--secondary-2)] backdrop-blur border-t border-[rgba(31,41,55,0.2)]">
+    <footer className="bg-[var(--secondary-2)] backdrop-blur border-t border-[rgba(var(--text-rgb),0.2)]">
       <div className="mx-auto max-w-5xl px-8 py-8">
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
           {/* Social links */}
@@ -67,8 +67,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 pt-6 border-t border-[rgba(31,41,55,0.2)] text-center">
-          <p className="text-sm text-[rgba(31,41,55,0.8)]">
+        <div className="mt-8 pt-6 border-t border-[rgba(var(--text-rgb),0.2)] text-center">
+          <p className="text-sm text-[rgba(var(--text-rgb),0.8)]">
             © {currentYear} Aurora Meilian Karlsen.{' '}
             {t('footer.copyright', 'All rights reserved.')}
           </p>

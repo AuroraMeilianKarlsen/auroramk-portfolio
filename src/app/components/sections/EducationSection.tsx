@@ -55,7 +55,7 @@ export default function EducationSection() {
         <div className="relative">
           {/* Vertical timeline line */}
           <div
-            className="absolute left-4 top-2 bottom-2 w-0.5 bg-[rgba(255,135,135,0.5)]"
+            className="absolute left-4 top-2 bottom-2 w-0.5 bg-[rgba(var(--link-hover-rgb),0.6)]"
             aria-hidden="true"
           />
 
@@ -69,7 +69,7 @@ export default function EducationSection() {
                 />
 
                 {/* Content card */}
-                <div className="bg-[rgba(255,135,135,0.08)] rounded-lg p-5 hover:bg-[rgba(255,135,135,0.16)] transition-colors border border-[rgba(255,135,135,0.25)]">
+                <div className="bg-[rgba(var(--link-hover-rgb),0.2)] rounded-lg p-5 hover:bg-[rgba(var(--link-hover-rgb),0.32)] transition-colors border border-[rgba(var(--link-hover-rgb),0.45)]">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
                     <h3 className="text-lg font-semibold text-[var(--text)]">
                       {item.degree}
@@ -78,10 +78,10 @@ export default function EducationSection() {
                       {item.period}
                     </span>
                   </div>
-                  <p className="text-[rgba(31,41,55,0.7)] text-sm mb-2">
+                  <p className="text-[rgba(var(--text-rgb),0.7)] text-sm mb-2">
                     {item.institution}
                   </p>
-                  <p className="text-[rgba(31,41,55,0.85)] text-sm">
+                  <p className="text-[rgba(var(--text-rgb),0.85)] text-sm">
                     {item.description}
                   </p>
 
@@ -93,11 +93,11 @@ export default function EducationSection() {
                         : 'max-h-0 opacity-0'
                     }`}
                   >
-                    <div className="pt-3 border-t border-[rgba(255,135,135,0.25)]">
-                      <p className="text-sm text-[rgba(31,41,55,0.7)] font-medium mb-2">
+                    <div className="pt-3 border-t border-[rgba(var(--link-hover-rgb),0.45)]">
+                      <p className="text-sm text-[rgba(var(--text-rgb),0.7)] font-medium mb-2">
                         {t('education.whatYouLearn', 'What you learn:')}
                       </p>
-                      <p className="text-[rgba(31,41,55,0.85)] text-sm leading-relaxed">
+                      <p className="text-[rgba(var(--text-rgb),0.85)] text-sm leading-relaxed">
                         {item.details}
                       </p>
                     </div>
@@ -106,7 +106,7 @@ export default function EducationSection() {
                   {/* Toggle button */}
                   <button
                     onClick={() => toggleExpand(index)}
-                    className="mt-3 text-sm text-[var(--secondary-1)] hover:text-[var(--link-hover)] transition-colors flex items-center gap-1"
+                    className="mt-3 text-sm text-[var(--secondary-1)] hover:text-[var(--secondary-1)] transition-colors flex items-center gap-1"
                     aria-expanded={expandedIndex === index}
                   >
                     {expandedIndex === index
