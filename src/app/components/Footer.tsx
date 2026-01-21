@@ -7,14 +7,14 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-gray-950/70 backdrop-blur border-t border-gray-800">
+    <footer className="bg-[var(--secondary-2)] backdrop-blur border-t border-[rgba(var(--text-rgb),0.2)]">
       <div className="mx-auto max-w-5xl px-8 py-8">
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
           {/* Social links */}
           <div className="flex items-center gap-5">
             <a
               href="mailto:aurora.mk@icloud.com"
-              className="text-white/60 hover:text-indigo-400 transition-colors"
+              className="text-[var(--text)] hover:text-[var(--secondary-1)] transition-colors"
               aria-label="Send email"
             >
               <svg
@@ -31,7 +31,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/aurora-meilian-karlsen-970b0b2b4/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/60 hover:text-indigo-400 transition-colors"
+              className="text-[var(--text)] hover:text-[var(--secondary-1)] transition-colors"
               aria-label="LinkedIn"
             >
               <svg
@@ -47,7 +47,7 @@ export default function Footer() {
               href="https://github.com/AuroraMeilianKarlsen"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/60 hover:text-indigo-400 transition-colors"
+              className="text-[var(--text)] hover:text-[var(--secondary-1)] transition-colors"
               aria-label="GitHub"
             >
               <svg
@@ -67,8 +67,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 pt-6 border-t border-gray-800 text-center">
-          <p className="text-sm text-white/40">
+        <div className="mt-8 pt-6 border-t border-[rgba(var(--text-rgb),0.2)] text-center">
+          <p className="text-sm text-[rgba(var(--text-rgb),0.8)]">
             © {currentYear} Aurora Meilian Karlsen.{' '}
             {t('footer.copyright', 'All rights reserved.')}
           </p>

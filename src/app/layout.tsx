@@ -37,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth bg-gray-900">
-      <body className="bg-gray-900">
+    <html lang="en" className="scroll-smooth bg-[var(--bg)] text-[var(--text)]">
+      <body className="bg-[var(--bg)] text-[var(--text)]">
         <LanguageProvider>
           <Navbar />
           <div className="pt-16">{children}</div>

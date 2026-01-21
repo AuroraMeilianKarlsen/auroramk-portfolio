@@ -6,9 +6,23 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #111827; /* gray-900 */
+  color-scheme: light;
+  --bg: #fffae4;
+  --bg-rgb: 255, 250, 228;
+  --secondary-1: #3e6b3a;
+  --secondary-1-rgb: 62, 107, 58;
+  --secondary-2: #fde0c5;
+  --secondary-2-rgb: 253, 224, 197;
+  --text: #373737;
+  --text-rgb: 55, 55, 55;
+  --text-inverse: #ffffff;
+  --link-hover: #7ec976e6;
+  --link-hover-rgb: 248, 196, 180;
+  --overlay-70: rgba(0, 0, 0, 0.7);
+  --overlay-50: rgba(0, 0, 0, 0.5);
+  --shadow-200: rgba(0, 0, 0, 0.2);
+  color: var(--text);
+  background-color: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -16,24 +30,24 @@
 }
 
 html {
-  background-color: #111827; /* gray-900 */
+  background-color: var(--bg);
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #111827; /* gray-900 */
+  background-color: var(--bg);
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--secondary-1);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #535bf2;
+  color: var(--link-hover);
 }
 
 h1 {
@@ -43,13 +57,13 @@ h1 {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #111827; /* gray-900 - keep dark theme */
+    color: var(--text);
+    background-color: var(--bg);
   }
   html {
-    background-color: #111827; /* gray-900 */
+    background-color: var(--bg);
   }
   a:hover {
-    color: #747bff;
+    color: var(--link-hover);
   }
 }

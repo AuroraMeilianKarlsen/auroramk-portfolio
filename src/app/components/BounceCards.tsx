@@ -185,9 +185,9 @@ export default function BounceCards({
             key={idx}
             className={`card card-${idx} absolute w-[200px] aspect-square border-4 rounded-[30px] overflow-hidden`}
             style={{
-              boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)',
+              boxShadow: '0 4px 10px var(--shadow-200)',
               transform: transformStyles[idx] || 'none',
-              borderColor: '#F5E9DC',
+              borderColor: 'var(--bg)',
             }}
             onMouseEnter={() => pushSiblings(idx)}
             onMouseLeave={resetSiblings}

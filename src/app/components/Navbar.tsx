@@ -88,7 +88,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-50 bg-gray-950/70 backdrop-blur"
+        className="fixed top-0 left-0 right-0 z-50 bg-[var(--secondary-2)] backdrop-blur"
         aria-label="Main navigation"
       >
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 md:px-8 md:py-5">
@@ -103,8 +103,8 @@ export default function Navbar() {
                 <a
                   key={link.id}
                   href={link.href}
-                  className={`relative text-white/80 hover:text-indigo-400 transition-colors ${
-                    isActive ? 'text-indigo-400' : ''
+                  className={`relative text-[var(--text)] hover:text-[var(--secondary-1)] transition-colors ${
+                    isActive ? 'text-[var(--text)]' : ''
                   }`}
                   aria-current={isActive ? 'page' : undefined}
                   aria-label={link.label}
@@ -112,7 +112,7 @@ export default function Navbar() {
                   {link.label}
                   {isActive && (
                     <span
-                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-indigo-400"
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[var(--secondary-1)]"
                       aria-hidden="true"
                     />
                   )}
@@ -121,7 +121,7 @@ export default function Navbar() {
             })}
             <button
               onClick={() => setIsGameOpen(true)}
-              className="text-white/80 hover:text-indigo-400 transition-colors hover:scale-110"
+              className="text-[var(--text)] hover:text-[var(--secondary-1)] transition-colors hover:scale-110"
               aria-label="Open Dino game"
             >
               <Image
@@ -144,17 +144,17 @@ export default function Navbar() {
             aria-expanded={isMenuOpen}
           >
             <span
-              className={`block w-6 h-0.5 bg-white transition-all duration-300 ease-in-out ${
+              className={`block w-6 h-0.5 bg-[var(--text)] transition-all duration-300 ease-in-out ${
                 isMenuOpen ? 'rotate-45 translate-y-1.5' : ''
               }`}
             />
             <span
-              className={`block w-6 h-0.5 bg-white mt-1.5 transition-all duration-300 ease-in-out ${
+              className={`block w-6 h-0.5 bg-[var(--text)] mt-1.5 transition-all duration-300 ease-in-out ${
                 isMenuOpen ? 'opacity-0' : ''
               }`}
             />
             <span
-              className={`block w-6 h-0.5 bg-white mt-1.5 transition-all duration-300 ease-in-out ${
+              className={`block w-6 h-0.5 bg-[var(--text)] mt-1.5 transition-all duration-300 ease-in-out ${
                 isMenuOpen ? '-rotate-45 -translate-y-2' : ''
               }`}
             />
@@ -167,7 +167,7 @@ export default function Navbar() {
             isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <div className="flex flex-col items-center space-y-4 pb-6 pt-2 bg-gray-950/95 backdrop-blur">
+          <div className="flex flex-col items-center space-y-4 pb-6 pt-2 bg-[var(--secondary-2)] backdrop-blur">
             {navLinks.map((link) => {
               const isActive = activeSection === link.id;
               return (
@@ -175,8 +175,8 @@ export default function Navbar() {
                   key={link.id}
                   href={link.href}
                   onClick={handleNavClick}
-                  className={`relative text-lg text-white/80 hover:text-indigo-400 transition-colors py-2 ${
-                    isActive ? 'text-indigo-400' : ''
+                  className={`relative text-lg text-[var(--text)] hover:text-[var(--secondary-1)] transition-colors py-2 ${
+                    isActive ? 'text-[var(--text)]' : ''
                   }`}
                   aria-current={isActive ? 'page' : undefined}
                   aria-label={link.label}
@@ -184,7 +184,7 @@ export default function Navbar() {
                   {link.label}
                   {isActive && (
                     <span
-                      className="absolute -bottom-0 left-0 right-0 h-0.5 bg-indigo-400"
+                      className="absolute -bottom-0 left-0 right-0 h-0.5 bg-[var(--secondary-1)]"
                       aria-hidden="true"
                     />
                   )}
@@ -196,7 +196,7 @@ export default function Navbar() {
                 setIsGameOpen(true);
                 setIsMenuOpen(false);
               }}
-              className="text-white/80 hover:text-indigo-400 transition-colors hover:scale-110 py-2"
+              className="text-[var(--text)] hover:text-[var(--secondary-1)] transition-colors hover:scale-110 py-2"
               aria-label="Open Dino game"
             >
               <Image
