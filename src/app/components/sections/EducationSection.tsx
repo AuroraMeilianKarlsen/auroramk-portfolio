@@ -74,7 +74,7 @@ export default function EducationSection() {
                     <h3 className="text-lg font-semibold text-[var(--text)]">
                       {item.degree}
                     </h3>
-                    <span className="text-sm text-[var(--secondary-2)] font-medium">
+                    <span className="text-sm text-[var(--secondary-1)] font-medium">
                       {item.period}
                     </span>
                   </div>

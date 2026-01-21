@@ -11,14 +11,14 @@ function LanguageToggle() {
   return (
     <button
       onClick={toggleLanguage}
-      className="flex items-center gap-1 px-3 py-1.5 bg-[rgba(var(--link-hover-rgb),0.12)] backdrop-blur rounded-full border border-[rgba(var(--link-hover-rgb),0.45)] text-sm font-medium transition-all hover:bg-[rgba(var(--link-hover-rgb),0.2)]"
+      className="flex items-center gap-1 px-3 py-1.5 bg-[rgba(var(--link-hover-rgb),0.12)] backdrop-blur rounded-full border border-[rgba(var(--link-hover-rgb),0.45)] text-sm font-medium transition-all hover:bg-[rgba(var(--link-hover-rgb),0.22)] hover:border-[rgba(var(--link-hover-rgb),0.6)]"
       aria-label={`Switch to ${language === 'en' ? 'Norwegian' : 'English'}`}
     >
       <span
         className={`px-2 py-0.5 rounded-full transition-colors ${
           language === 'en'
-            ? 'bg-[var(--link-hover)] text-[var(--text)]'
-            : 'text-[rgba(var(--text-rgb),0.65)] hover:text-[var(--text)]'
+            ? 'bg-[var(--secondary-1)] text-[var(--text)]'
+            : 'text-[rgba(var(--text-rgb),0.65)] hover:text-[var(--link-hover)]'
         }`}
       >
         EN
@@ -26,8 +26,8 @@ function LanguageToggle() {
       <span
         className={`px-2 py-0.5 rounded-full transition-colors ${
           language === 'no'
-            ? 'bg-[var(--link-hover)] text-[var(--text)]'
-            : 'text-[rgba(var(--text-rgb),0.65)] hover:text-[var(--text)]'
+            ? 'bg-[var(--secondary-1)] text-[var(--text)]'
+            : 'text-[rgba(var(--text-rgb),0.65)] hover:text-[var(--link-hover)]'
         }`}
       >
         NO
