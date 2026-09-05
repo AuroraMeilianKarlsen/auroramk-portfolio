@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth bg-[var(--bg)] text-[var(--text)]">
+    <html lang="no" className="scroll-smooth bg-[var(--bg)] text-[var(--text)]">
       <body className="bg-[var(--bg)] text-[var(--text)]">
         <LanguageProvider>
           <Navbar />

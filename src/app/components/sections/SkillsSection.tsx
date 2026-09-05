@@ -41,6 +41,8 @@ const technologies: SkillItem[] = [
     title: 'Spring Boot',
   },
   { src: '/skillLogo/firebase.svg', alt: 'Firebase', title: 'Firebase' },
+  { src: '/skillLogo/dotnet.svg', alt: '.NET', title: '.NET' },
+  { src: '/skillLogo/supabase.svg', alt: 'Supabase', title: 'Supabase' },
 ];
 
 const tools: SkillItem[] = [
@@ -56,6 +58,11 @@ const tools: SkillItem[] = [
   { src: '/skillLogo/maven-original.svg', alt: 'Maven', title: 'Maven' },
   { src: '/skillLogo/figma-original.svg', alt: 'Figma', title: 'Figma' },
   { src: '/skillLogo/docker-original.svg', alt: 'Docker', title: 'Docker' },
+  {
+    src: '/skillLogo/azuredevops.svg',
+    alt: 'Azure DevOps',
+    title: 'Azure DevOps',
+  },
 ];
 
 // Custom render function to show logo + name

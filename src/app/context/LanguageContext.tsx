@@ -32,13 +32,14 @@ function getNestedValue(obj: Record<string, unknown>, path: string): unknown {
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>('en');
+  // Norsk er standard, engelsk velges via språkbryteren
+  const [language, setLanguage] = useState<Language>('no');
 
   // Les språkvalg fra localStorage ved oppstart
   useEffect(() => {
     const stored = localStorage.getItem('language') as Language | null;
-    if (stored === 'no') {
-      setLanguage('no');
+    if (stored === 'en') {
+      setLanguage('en');
     }
   }, []);
 
