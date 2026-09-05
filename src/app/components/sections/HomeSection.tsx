@@ -6,23 +6,14 @@ import { useLanguage } from '../../context/LanguageContext';
 
 // Toggle-knapp komponent
 function LanguageToggle() {
-  const { language, toggleLanguage } = useLanguage();
+  const { language, toggleLanguage, t } = useLanguage();
 
   return (
     <button
       onClick={toggleLanguage}
       className="flex items-center gap-1 px-3 py-1.5 bg-[rgba(var(--link-hover-rgb),0.12)] backdrop-blur rounded-full border border-[rgba(var(--link-hover-rgb),0.45)] text-sm font-medium transition-all hover:bg-[rgba(var(--link-hover-rgb),0.22)] hover:border-[rgba(var(--link-hover-rgb),0.6)]"
-      aria-label={`Switch to ${language === 'en' ? 'Norwegian' : 'English'}`}
+      aria-label={t('home.switchLanguage', 'Switch to Norwegian')}
     >
-      <span
-        className={`px-2 py-0.5 rounded-full transition-colors ${
-          language === 'en'
-            ? 'bg-[var(--secondary-1)] text-[var(--text)]'
-            : 'text-[rgba(var(--text-rgb),0.65)] hover:text-[var(--link-hover)]'
-        }`}
-      >
-        EN
-      </span>
       <span
         className={`px-2 py-0.5 rounded-full transition-colors ${
           language === 'no'
@@ -31,6 +22,15 @@ function LanguageToggle() {
         }`}
       >
         NO
+      </span>
+      <span
+        className={`px-2 py-0.5 rounded-full transition-colors ${
+          language === 'en'
+            ? 'bg-[var(--secondary-1)] text-[var(--text)]'
+            : 'text-[rgba(var(--text-rgb),0.65)] hover:text-[var(--link-hover)]'
+        }`}
+      >
+        EN
       </span>
     </button>
   );
@@ -67,7 +67,7 @@ export default function HomeSection() {
             <br />
             {t(
               'home.description2',
-              "I'm a student developer in my 3rd year of a Bachelor's in Computer Science at NTNU who enjoys building simple and user-friendly solutions."
+              "I'm a Master's student in Informatics at NTNU, specializing in interaction design, game and learning technology, who enjoys building simple and user-friendly solutions."
             )}
           </p>
           <br />

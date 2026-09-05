@@ -10,28 +10,41 @@ export default function EducationSection() {
   // Engelsk som fallback, norsk fra JSON
   const education = [
     {
-      period: '2023 - 2026',
-      degree: t('education.degree1', "Bachelor's in Computer Science"),
+      period: '2026 - 2028',
+      degree: t('education.degree1', "Master's in Informatics"),
       institution: 'NTNU',
       description: t(
         'education.desc1',
-        'Effective, safe and flexible software development, algorithms, building user-friendly applications.'
+        'Specialization in Interaction Design, Game and Learning Technology, focused on building interactive systems with the user experience at the centre.'
       ),
       details: t(
         'education.details1',
+        'A research-based programme where you specialize within one field and complete the degree with a master’s thesis. The specialization in interaction design, game and learning technology covers the development of interactive graphical systems, from simulators to pure entertainment games: user interface design, 2D and 3D graphics programming, software architecture and system development, and artificial intelligence in interactive systems. Game design and game development methodology are used in project work, along with the use of games in learning, interactive storytelling and gamification of applications. You develop scientific working methods and the ability to solve new and challenging problems.'
+      ),
+    },
+    {
+      period: '2023 - 2026',
+      degree: t('education.degree2', "Bachelor's in Computer Science"),
+      institution: 'NTNU',
+      description: t(
+        'education.desc2',
+        'Effective, safe and flexible software development, algorithms, building user-friendly applications.'
+      ),
+      details: t(
+        'education.details2',
         "Programming, algorithms, data structures, and software development methodology. You gain skills in building secure, user-friendly systems for web, mobile, and desktop applications. The program covers database design, network communication, data-driven software development and human-computer interaction, preparing you to solve complex technical problems while understanding technology's role in society."
       ),
     },
     {
       period: '2020 - 2023',
-      degree: t('education.degree2', "Bachelor's in Biology"),
+      degree: t('education.degree3', "Bachelor's in Biology"),
       institution: 'NTNU',
       description: t(
-        'education.desc2',
+        'education.desc3',
         'Specialization in Cell and Molecular Biology, providing a strong foundation in scientific research and analytical thinking.'
       ),
       details: t(
-        'education.details2',
+        'education.details3',
         'Understanding life from molecular processes to ecosystems. Specialization in cell and molecular biology provides knowledge of how organisms function at the cellular level, including physiology, genetics, and ecotoxicology. A fundamental understanding of biological systems and how these systems inspired neural network architectures. You develop practical lab skills, scientific methodology, and the ability to contribute to sustainable development and environmental conservation.'
       ),
     },
@@ -89,7 +102,7 @@ export default function EducationSection() {
                   <div
                     className={`overflow-hidden transition-all duration-300 ease-in-out ${
                       expandedIndex === index
-                        ? 'max-h-96 opacity-100 mt-4'
+                        ? 'max-h-[48rem] opacity-100 mt-4'
                         : 'max-h-0 opacity-0'
                     }`}
                   >
