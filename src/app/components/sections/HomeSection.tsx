@@ -51,9 +51,9 @@ export default function HomeSection() {
         <LanguageToggle />
       </div>
 
-      <div className="mx-auto grid w-full max-w-5xl items-center gap-10 lg:grid-cols-2">
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-10 lg:grid-cols-[1.55fr_1fr] xl:gap-14">
         <div className="text-center lg:text-left">
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-4xl font-bold lg:whitespace-nowrap">
             {t('home.greeting', 'Hi,')}{' '}
             <span className="inline-block">
               <ClientTyping />
