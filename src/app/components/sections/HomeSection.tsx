@@ -1,6 +1,7 @@
 'use client';
 
 import ClientTyping from '../ClientTyping';
+import Folder from '../Folder';
 import Image from 'next/image';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -73,27 +74,19 @@ export default function HomeSection() {
           <br />
           <br />
           <br />
-          <a
-            href="/AuroraMeilianKarlsenCV.pdf"
-            download="Aurora_Meilian_Karlsen_CV.pdf"
-            className="group inline-flex items-center gap-2 px-6 py-3 bg-[var(--secondary-1)] hover:bg-[var(--secondary-1)] text-[var(--text)] rounded-xl transition-all duration-300 font-semibold shadow-lg shadow-[rgba(var(--secondary-1-rgb),0.25)] hover:shadow-[rgba(var(--secondary-1-rgb),0.4)] hover:-translate-y-0.5"
-            aria-label="Download CV in PDF format"
-          >
-            <svg
-              className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-0.5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-              />
-            </svg>
-            {t('home.downloadCV', 'Download resume')}
-          </a>
+          {/* Sentrert, med plass over til arket som spretter opp ved klikk */}
+          <div className="flex justify-center pt-24">
+            <Folder
+              href="/AuroraMeilianKarlsenCV.pdf"
+              download="Aurora_Meilian_Karlsen_CV.pdf"
+              paperCount={1}
+              items={['CV']}
+              size={1.6}
+              color="#fa8caf" /* --secondary-1 */
+              label={t('home.downloadCV', 'Download resume')}
+              ariaLabel={t('home.downloadCV', 'Download resume')}
+            />
+          </div>
         </div>
         <div className="flex justify-center lg:justify-end">
           <Image
