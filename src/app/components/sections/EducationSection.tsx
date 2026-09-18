@@ -11,41 +11,41 @@ export default function EducationSection() {
   const education = [
     {
       period: '2026 - 2028',
-      degree: t('education.degree1', "Master's in Informatics"),
+      degree: t('education.degree1', 'Master i informatikk'),
       institution: 'NTNU',
       description: t(
         'education.desc1',
-        'Specialization in Interaction Design, Game and Learning Technology, focused on building interactive systems with the user experience at the centre.'
+        'Studieretning innen interaksjonsdesign, spill- og læringsteknologi, med fokus på å bygge interaktive systemer med brukeropplevelsen i sentrum.'
       ),
       details: t(
         'education.details1',
-        'A research-based programme where you specialize within one field and complete the degree with a master’s thesis. The specialization in interaction design, game and learning technology covers the development of interactive graphical systems, from simulators to pure entertainment games: user interface design, 2D and 3D graphics programming, software architecture and system development, and artificial intelligence in interactive systems. Game design and game development methodology are used in project work, along with the use of games in learning, interactive storytelling and gamification of applications. You develop scientific working methods and the ability to solve new and challenging problems.'
+        'Et forskningsbasert studium der du fordyper deg i ett fagområde og avslutter graden med en masteroppgave. Studieretningen interaksjonsdesign, spill- og læringsteknologi handler om utvikling av interaktive grafiske systemer, fra simulatorer til rene underholdningsspill: design av brukergrensesnitt, 2D- og 3D-grafikkprogrammering, programvarearkitektur og systemutvikling, og kunstig intelligens i interaktive systemer. Spilldesign og spillutviklingsmetodikk brukes i prosjektarbeid, sammen med bruk av spill i læring, interaktiv historiefortelling og gamifisering av applikasjoner. Du utvikler vitenskapelig arbeidsmåte og evnen til å løse nye og utfordrende problemer.'
       ),
     },
     {
       period: '2023 - 2026',
-      degree: t('education.degree2', "Bachelor's in Computer Science"),
+      degree: t('education.degree2', 'Bachelor i informatikk'),
       institution: 'NTNU',
       description: t(
         'education.desc2',
-        'Effective, safe and flexible software development, algorithms, building user-friendly applications.'
+        'Effektiv, sikker og fleksibel programvareutvikling, algoritmer, bygging av brukervennlige applikasjoner.'
       ),
       details: t(
         'education.details2',
-        "Programming, algorithms, data structures, and software development methodology. You gain skills in building secure, user-friendly systems for web, mobile, and desktop applications. The program covers database design, network communication, data-driven software development and human-computer interaction, preparing you to solve complex technical problems while understanding technology's role in society."
+        'Programmering, algoritmer, datastrukturer og programvareutviklingsmetodikk. Du får ferdigheter i å bygge sikre, brukervennlige systemer for web-, mobil- og desktop-applikasjoner. Programmet dekker databasedesign, nettverkskommunikasjon, datadrevet programvareutvikling og menneske-maskin-interaksjon, og forbereder deg på å løse komplekse tekniske problemer samtidig som du forstår teknologiens rolle i samfunnet.'
       ),
     },
     {
       period: '2020 - 2023',
-      degree: t('education.degree3', "Bachelor's in Biology"),
+      degree: t('education.degree3', 'Bachelor i biologi'),
       institution: 'NTNU',
       description: t(
         'education.desc3',
-        'Specialization in Cell and Molecular Biology, providing a strong foundation in scientific research and analytical thinking.'
+        'Spesialisering i celle- og molekylærbiologi, som ga et sterkt grunnlag i vitenskapelig forskning og analytisk tenkning.'
       ),
       details: t(
         'education.details3',
-        'Understanding life from molecular processes to ecosystems. Specialization in cell and molecular biology provides knowledge of how organisms function at the cellular level, including physiology, genetics, and ecotoxicology. A fundamental understanding of biological systems and how these systems inspired neural network architectures. You develop practical lab skills, scientific methodology, and the ability to contribute to sustainable development and environmental conservation.'
+        'Forståelse av liv fra molekylære prosesser til økosystemer. Spesialisering i celle- og molekylærbiologi gir kunnskap om hvordan organismer fungerer på cellenivå, inkludert fysiologi, genetikk og økotoksikologi. En grunnleggende forståelse av biologiske systemer og hvordan disse systemene inspirerte nevrale nettverksarkitekturer. Du utvikler praktiske laboratorieferdigheter, vitenskapelig metodikk og evnen til å bidra til bærekraftig utvikling og miljøvern.'
       ),
     },
   ];
@@ -62,7 +62,7 @@ export default function EducationSection() {
     >
       <div className="mx-auto max-w-3xl">
         <h2 className="text-3xl font-semibold mb-8">
-          {t('education.title', 'Education')}
+          {t('education.title', 'Utdanning')}
         </h2>
 
         <div className="relative">
@@ -108,7 +108,7 @@ export default function EducationSection() {
                   >
                     <div className="pt-3 border-t border-[rgba(var(--link-hover-rgb),0.45)]">
                       <p className="text-sm text-[rgba(var(--text-rgb),0.7)] font-medium mb-2">
-                        {t('education.whatYouLearn', 'What you learn:')}
+                        {t('education.whatYouLearn', 'Hva du lærer:')}
                       </p>
                       <p className="text-[rgba(var(--text-rgb),0.85)] text-sm leading-relaxed">
                         {item.details}
@@ -123,8 +123,8 @@ export default function EducationSection() {
                     aria-expanded={expandedIndex === index}
                   >
                     {expandedIndex === index
-                      ? t('education.readLess', 'Read less')
-                      : t('education.readMore', 'Read more')}
+                      ? t('education.readLess', 'Les mindre')
+                      : t('education.readMore', 'Les mer')}
                     <svg
                       className={`w-4 h-4 transition-transform duration-300 ${
                         expandedIndex === index ? 'rotate-180' : ''

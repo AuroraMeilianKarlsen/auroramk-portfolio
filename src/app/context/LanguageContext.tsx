@@ -7,7 +7,7 @@ import {
   useEffect,
   ReactNode,
 } from 'react';
-import noTranslations from '../translations/no.json';
+import enTranslations from '../translations/en.json';
 
 type Language = 'en' | 'no';
 
@@ -53,17 +53,17 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     setLanguage((prev) => (prev === 'en' ? 'no' : 'en'));
   };
 
-  // t() - returnerer norsk oversettelse hvis språk er 'no', ellers fallback (engelsk)
+  // t() - returnerer engelsk oversettelse hvis språk er 'en', ellers fallback (norsk)
   const t = (key: string, fallback: string): string => {
-    if (language === 'en') return fallback;
-    const value = getNestedValue(noTranslations, key);
+    if (language === 'no') return fallback;
+    const value = getNestedValue(enTranslations, key);
     return typeof value === 'string' ? value : fallback;
   };
 
   // tArray() - for arrays som typingTexts
   const tArray = (key: string, fallback: string[]): string[] => {
-    if (language === 'en') return fallback;
-    const value = getNestedValue(noTranslations, key);
+    if (language === 'no') return fallback;
+    const value = getNestedValue(enTranslations, key);
     return Array.isArray(value) ? value : fallback;
   };
 

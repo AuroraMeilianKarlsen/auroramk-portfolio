@@ -6,10 +6,10 @@ import { useLanguage } from '../context/LanguageContext';
 export default function ClientTyping() {
   const { tArray } = useLanguage();
 
-  // Engelsk som fallback, norsk fra JSON
+  // Norsk som fallback, engelsk fra JSON
   const texts = tArray('home.typingTexts', [
-    'I am Aurora Meilian Karlsen',
-    'welcome to my page!',
+    'jeg er Aurora Meilian Karlsen',
+    'velkommen til min side!',
   ]);
 
   return (

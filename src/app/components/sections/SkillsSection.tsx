@@ -91,7 +91,7 @@ export default function SkillsSection() {
       {/* Title centered */}
       <div className="text-center mb-6 px-6">
         <h2 className="text-2xl font-semibold">
-          {t('skills.title', 'Skills')}
+          {t('skills.title', 'Ferdigheter')}
         </h2>
       </div>
 

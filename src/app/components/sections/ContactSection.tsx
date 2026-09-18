@@ -85,7 +85,7 @@ export default function ContactSection() {
     >
       <div className="mx-auto max-w-3xl">
         <h2 className="text-3xl font-semibold text-center">
-          {t('contact.title', 'Contact')}
+          {t('contact.title', 'Kontakt')}
         </h2>
 
         <div className="mt-8 flex justify-center gap-12">
