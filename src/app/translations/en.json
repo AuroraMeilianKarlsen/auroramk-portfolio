@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "Home",
+    "contact": "Contact",
+    "about": "About",
+    "education": "Education",
+    "skills": "Skills"
+  },
+  "home": {
+    "greeting": "Hi,",
+    "typingTexts": ["I am Aurora Meilian Karlsen", "welcome to my page!"],
+    "description1": "Computer Science student with a background in Cell and Molecular Biology.",
+    "description2": "I'm a Master's student in Informatics at NTNU, specializing in interaction design, game and learning technology, who enjoys building simple and user-friendly solutions.",
+    "downloadCV": "Download resume",
+    "switchLanguage": "Switch to Norwegian"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "I enjoy solving problems and building web experiences that combine development, architecture, and design. I'm especially interested in how technical solutions can create intuitive and engaging user experiences, and I like exploring creativity through interactive design.",
+    "p2": "With a background in Cell & Molecular Biology, I've gained a cross-disciplinary perspective and a broader understanding of how data modeling approaches can solve complex problems.",
+    "p3": "Outside of tech, I'm social and actively involved in my student association. here I have gained experience with coordinating volunteers, working with administration and communication to create a inclusive environment. It's something I truly value and an experience I would never want to be without. It has taught me a lot about collaboration, responsibility, and being part of something bigger."
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "education": {
+    "title": "Education",
+    "degree1": "Master's in Informatics",
+    "desc1": "Specialization in Interaction Design, Game and Learning Technology, focused on building interactive systems with the user experience at the centre.",
+    "details1": "A research-based programme where you specialize within one field and complete the degree with a master’s thesis. The specialization in interaction design, game and learning technology covers the development of interactive graphical systems, from simulators to pure entertainment games: user interface design, 2D and 3D graphics programming, software architecture and system development, and artificial intelligence in interactive systems. Game design and game development methodology are used in project work, along with the use of games in learning, interactive storytelling and gamification of applications. You develop scientific working methods and the ability to solve new and challenging problems.",
+    "degree2": "Bachelor's in Computer Science",
+    "desc2": "Effective, safe and flexible software development, algorithms, building user-friendly applications.",
+    "details2": "Programming, algorithms, data structures, and software development methodology. You gain skills in building secure, user-friendly systems for web, mobile, and desktop applications. The program covers database design, network communication, data-driven software development and human-computer interaction, preparing you to solve complex technical problems while understanding technology's role in society.",
+    "degree3": "Bachelor's in Biology",
+    "desc3": "Specialization in Cell and Molecular Biology, providing a strong foundation in scientific research and analytical thinking.",
+    "details3": "Understanding life from molecular processes to ecosystems. Specialization in cell and molecular biology provides knowledge of how organisms function at the cellular level, including physiology, genetics, and ecotoxicology. A fundamental understanding of biological systems and how these systems inspired neural network architectures. You develop practical lab skills, scientific methodology, and the ability to contribute to sustainable development and environmental conservation.",
+    "whatYouLearn": "What you learn:",
+    "readMore": "Read more",
+    "readLess": "Read less"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  }
+}

@@ -68,17 +68,17 @@ export default function Navbar() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Engelsk som fallback i label, norsk hentes fra JSON via t()
+  // Norsk som fallback i label, engelsk hentes fra JSON via t()
   const navLinks = [
-    { id: 'home', label: t('nav.home', 'Home'), href: '#home' },
-    { id: 'contact', label: t('nav.contact', 'Contact'), href: '#contact' },
-    { id: 'about', label: t('nav.about', 'About'), href: '#about' },
+    { id: 'home', label: t('nav.home', 'Hjem'), href: '#home' },
+    { id: 'contact', label: t('nav.contact', 'Kontakt'), href: '#contact' },
+    { id: 'about', label: t('nav.about', 'Om meg'), href: '#about' },
     {
       id: 'education',
-      label: t('nav.education', 'Education'),
+      label: t('nav.education', 'Utdanning'),
       href: '#education',
     },
-    { id: 'skills', label: t('nav.skills', 'Skills'), href: '#skills' },
+    { id: 'skills', label: t('nav.skills', 'Ferdigheter'), href: '#skills' },
   ];
 
   const handleNavClick = () => {

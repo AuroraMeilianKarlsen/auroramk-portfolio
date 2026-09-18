@@ -14,26 +14,26 @@ export default function AboutSection() {
     >
       <div className="mx-auto max-w-5xl">
         <h2 className="text-3xl font-semibold mb-6">
-          {t('about.title', 'About Me')}
+          {t('about.title', 'Om meg')}
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-8 items-start">
           <div className="space-y-4 lg:pr-4">
             <p className="text-[rgba(var(--text-rgb),0.85)]">
               {t(
                 'about.p1',
-                "I enjoy solving problems and building web experiences that combine development, architecture, and design. I'm especially interested in how technical solutions can create intuitive and engaging user experiences, and I like exploring creativity through interactive design."
+                'Jeg liker å løse problemer og bygge nettopplevelser som kombinerer utvikling, arkitektur og design. Jeg er spesielt interessert i hvordan tekniske løsninger kan skape intuitive og engasjerende brukeropplevelser, og jeg liker å utforske kreativitet gjennom interaktiv design.'
               )}
             </p>
             <p className="text-[rgba(var(--text-rgb),0.85)]">
               {t(
                 'about.p2',
-                "With a background in Cell & Molecular Biology, I've gained a cross-disciplinary perspective and a broader understanding of how data modeling approaches can solve complex problems."
+                'Med bakgrunn i celle- og molekylærbiologi har jeg fått et tverrfaglig perspektiv og en bredere forståelse av hvordan datamodelleringsmetoder kan løse komplekse problemer.'
               )}
             </p>
             <p className="text-[rgba(var(--text-rgb),0.85)]">
               {t(
                 'about.p3',
-                "Outside of tech, I'm social and actively involved in my student association. here I have gained experience with coordinating volunteers, working with administration and communication to create a inclusive environment. It's something I truly value and an experience I would never want to be without. It has taught me a lot about collaboration, responsibility, and being part of something bigger."
+                'Utenfor tech er jeg sosial og aktivt involvert i studentforeningen min. Her har jeg fått erfaring med å koordinere frivillige, jobbe med administrasjon og kommunikasjon for å skape et inkluderende miljø. Det er noe jeg virkelig verdsetter og en erfaring jeg aldri ville vært foruten. Det har lært meg mye om samarbeid, ansvar og å være en del av noe større.'
               )}
             </p>
           </div>

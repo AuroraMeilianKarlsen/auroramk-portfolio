@@ -13,7 +13,7 @@ function LanguageToggle() {
     <button
       onClick={toggleLanguage}
       className="flex items-center gap-1 px-3 py-1.5 bg-[rgba(var(--link-hover-rgb),0.12)] backdrop-blur rounded-full border border-[rgba(var(--link-hover-rgb),0.45)] text-sm font-medium transition-all hover:bg-[rgba(var(--link-hover-rgb),0.22)] hover:border-[rgba(var(--link-hover-rgb),0.6)]"
-      aria-label={t('home.switchLanguage', 'Switch to Norwegian')}
+      aria-label={t('home.switchLanguage', 'Bytt til engelsk')}
     >
       <span
         className={`px-2 py-0.5 rounded-full transition-colors ${
@@ -54,7 +54,7 @@ export default function HomeSection() {
       <div className="mx-auto grid w-full max-w-6xl items-center gap-10 lg:grid-cols-[1.55fr_1fr] xl:gap-14">
         <div className="text-center lg:text-left">
           <h1 className="text-4xl font-bold lg:whitespace-nowrap">
-            {t('home.greeting', 'Hi,')}{' '}
+            {t('home.greeting', 'Hei,')}{' '}
             <span className="inline-block">
               <ClientTyping />
             </span>
@@ -62,13 +62,13 @@ export default function HomeSection() {
           <p className="mt-4 text-[rgba(var(--text-rgb),0.85)]">
             {t(
               'home.description1',
-              'Computer Science student with a background in Cell and Molecular Biology.'
+              'Informatikkstudent med bakgrunn i celle- og molekylærbiologi.'
             )}
             <br />
             <br />
             {t(
               'home.description2',
-              "I'm a Master's student in Informatics at NTNU, specializing in interaction design, game and learning technology, who enjoys building simple and user-friendly solutions."
+              'Jeg er masterstudent i informatikk ved NTNU med studieretning innen interaksjonsdesign, spill- og læringsteknologi, og liker å bygge enkle og brukervennlige løsninger.'
             )}
           </p>
           <br />
@@ -83,8 +83,8 @@ export default function HomeSection() {
               items={['CV']}
               size={1.6}
               color="#fa8caf" /* --secondary-1 */
-              label={t('home.downloadCV', 'Download resume')}
-              ariaLabel={t('home.downloadCV', 'Download resume')}
+              label={t('home.downloadCV', 'Last ned CV')}
+              ariaLabel={t('home.downloadCV', 'Last ned CV')}
             />
           </div>
         </div>

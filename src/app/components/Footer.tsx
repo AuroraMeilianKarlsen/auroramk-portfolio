@@ -70,7 +70,7 @@ export default function Footer() {
         <div className="mt-8 pt-6 border-t border-[rgba(var(--text-rgb),0.2)] text-center">
           <p className="text-sm text-[rgba(var(--text-rgb),0.8)]">
             © {currentYear} Aurora Meilian Karlsen.{' '}
-            {t('footer.copyright', 'All rights reserved.')}
+            {t('footer.copyright', 'Alle rettigheter reservert.')}
           </p>
         </div>
       </div>
