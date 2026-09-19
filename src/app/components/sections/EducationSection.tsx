@@ -5,47 +5,54 @@ import { useLanguage } from '../../context/LanguageContext';
 
 export default function EducationSection() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
-  const { t } = useLanguage();
+  const { t, tArray } = useLanguage();
 
-  // Engelsk som fallback, norsk fra JSON
+  // Norsk som fallback, engelsk fra JSON
   const education = [
     {
       period: '2026 - 2028',
       degree: t('education.degree1', 'Master i informatikk'),
       institution: 'NTNU',
+      link: 'https://www.ntnu.edu/studies/msit',
       description: t(
         'education.desc1',
-        'Studieretning innen interaksjonsdesign, spill- og læringsteknologi, med fokus på å bygge interaktive systemer med brukeropplevelsen i sentrum.'
+        'Studieretning interaksjonsdesign, spill- og læringsteknologi, med fokus på å bygge interaktive systemer med brukeropplevelsen i sentrum.'
       ),
       details: t(
         'education.details1',
-        'Et forskningsbasert studium der du fordyper deg i ett fagområde og avslutter graden med en masteroppgave. Studieretningen interaksjonsdesign, spill- og læringsteknologi handler om utvikling av interaktive grafiske systemer, fra simulatorer til rene underholdningsspill: design av brukergrensesnitt, 2D- og 3D-grafikkprogrammering, programvarearkitektur og systemutvikling, og kunstig intelligens i interaktive systemer. Spilldesign og spillutviklingsmetodikk brukes i prosjektarbeid, sammen med bruk av spill i læring, interaktiv historiefortelling og gamifisering av applikasjoner. Du utvikler vitenskapelig arbeidsmåte og evnen til å løse nye og utfordrende problemer.'
+        'Fordypning i design av grafiske brukergrensesnitt med brukersentrerte metoder, teorien bak dataspill og hvordan ideer blir til spillbare opplevelser, og hvordan digitale verktøy kan støtte undervisning og læring. Graden omfatter praktiske prosjekter i tverrfaglige team og avsluttes med en masteroppgave.'
       ),
     },
     {
       period: '2023 - 2026',
       degree: t('education.degree2', 'Bachelor i informatikk'),
       institution: 'NTNU',
+      link: 'https://www.ntnu.no/studier/bit',
       description: t(
         'education.desc2',
         'Effektiv, sikker og fleksibel programvareutvikling, algoritmer, bygging av brukervennlige applikasjoner.'
       ),
+      highlights: tArray('education.highlights2', [
+        'Utveksling til Universitetet i Padova høsten 2025.',
+        'Bacheloroppgave: utvikling av en helseapplikasjon for å kartlegge og avdekke kardiometabolske risikofaktorer ved hjelp av Hjertefrisk-algoritmen.',
+      ]),
       details: t(
         'education.details2',
-        'Programmering, algoritmer, datastrukturer og programvareutviklingsmetodikk. Du får ferdigheter i å bygge sikre, brukervennlige systemer for web-, mobil- og desktop-applikasjoner. Programmet dekker databasedesign, nettverkskommunikasjon, datadrevet programvareutvikling og menneske-maskin-interaksjon, og forbereder deg på å løse komplekse tekniske problemer samtidig som du forstår teknologiens rolle i samfunnet.'
+        'Bred kunnskap om programmering, systemutvikling, programvare og kommunikasjonsbaserte systemer, med vekt på å lage brukervennlige datasystemer. Praktisk erfaring med databasedesign, webteknologi, interaksjonsdesign og datasikkerhet, og forståelse for informasjonsteknologiens rolle i samfunnet og for bærekraftig utvikling.'
       ),
     },
     {
       period: '2020 - 2023',
       degree: t('education.degree3', 'Bachelor i biologi'),
       institution: 'NTNU',
+      link: 'https://www.ntnu.no/studier/bbi',
       description: t(
         'education.desc3',
         'Spesialisering i celle- og molekylærbiologi, som ga et sterkt grunnlag i vitenskapelig forskning og analytisk tenkning.'
       ),
       details: t(
         'education.details3',
-        'Forståelse av liv fra molekylære prosesser til økosystemer. Spesialisering i celle- og molekylærbiologi gir kunnskap om hvordan organismer fungerer på cellenivå, inkludert fysiologi, genetikk og økotoksikologi. En grunnleggende forståelse av biologiske systemer og hvordan disse systemene inspirerte nevrale nettverksarkitekturer. Du utvikler praktiske laboratorieferdigheter, vitenskapelig metodikk og evnen til å bidra til bærekraftig utvikling og miljøvern.'
+        'Kunnskap om levende organismer, fra molekylære prosesser i cellen til mangfoldet av organismer, med fordypning i cellers struktur og virkemåte og i arv, DNA, RNA og proteiner. Praktisk laboratorieerfaring med metoder innen molekylærgenetikk, proteinseparering, proteinidentifisering og immunologi, og med å behandle, tolke og presentere resultater fra laboratorieforsøk.'
       ),
     },
   ];
@@ -97,6 +104,13 @@ export default function EducationSection() {
                   <p className="text-[rgba(var(--text-rgb),0.85)] text-sm">
                     {item.description}
                   </p>
+                  {item.highlights && (
+                    <ul className="mt-3 list-disc pl-5 space-y-1 text-sm text-[rgba(var(--text-rgb),0.85)] marker:text-[var(--secondary-1)]">
+                      {item.highlights.map((highlight) => (
+                        <li key={highlight}>{highlight}</li>
+                      ))}
+                    </ul>
+                  )}
 
                   {/* Read more section */}
                   <div
@@ -108,11 +122,37 @@ export default function EducationSection() {
                   >
                     <div className="pt-3 border-t border-[rgba(var(--link-hover-rgb),0.45)]">
                       <p className="text-sm text-[rgba(var(--text-rgb),0.7)] font-medium mb-2">
-                        {t('education.whatYouLearn', 'Hva du lærer:')}
+                        {t('education.competence', 'Kunnskap og ferdigheter:')}
                       </p>
                       <p className="text-[rgba(var(--text-rgb),0.85)] text-sm leading-relaxed">
                         {item.details}
                       </p>
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        tabIndex={expandedIndex === index ? 0 : -1}
+                        className="mt-3 inline-flex items-center gap-1 text-sm text-[var(--secondary-1)] underline underline-offset-2 hover:opacity-80 transition-opacity"
+                      >
+                        {t(
+                          'education.programmeLink',
+                          'Les mer om studiet hos NTNU'
+                        )}
+                        <svg
+                          className="w-3.5 h-3.5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M14 5h5v5M19 5l-9 9M17 14v4a1 1 0 01-1 1H6a1 1 0 01-1-1V8a1 1 0 011-1h4"
+                          />
+                        </svg>
+                      </a>
                     </div>
                   </div>
 

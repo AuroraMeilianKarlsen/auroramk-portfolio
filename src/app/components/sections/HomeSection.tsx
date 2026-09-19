@@ -62,13 +62,13 @@ export default function HomeSection() {
           <p className="mt-4 text-[rgba(var(--text-rgb),0.85)]">
             {t(
               'home.description1',
-              'Informatikkstudent med bakgrunn i celle- og molekylærbiologi.'
+              'Masterstudent i informatikk ved NTNU med studieretning innen interaksjonsdesign, spill- og læringsteknologi. Bakgrunn i celle- og molekylærbiologi. '
             )}
             <br />
             <br />
             {t(
               'home.description2',
-              'Jeg er masterstudent i informatikk ved NTNU med studieretning innen interaksjonsdesign, spill- og læringsteknologi, og liker å bygge enkle og brukervennlige løsninger.'
+              'Planlegger arrangementer og skriver avis i linjeforeningen min, og lager app og studerer litt på siden'
             )}
           </p>
           <br />

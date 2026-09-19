@@ -21,19 +21,19 @@ export default function AboutSection() {
             <p className="text-[rgba(var(--text-rgb),0.85)]">
               {t(
                 'about.p1',
-                'Jeg liker å løse problemer og bygge nettopplevelser som kombinerer utvikling, arkitektur og design. Jeg er spesielt interessert i hvordan tekniske løsninger kan skape intuitive og engasjerende brukeropplevelser, og jeg liker å utforske kreativitet gjennom interaktiv design.'
+                'Jeg elsker å løse problemer, lære nye ting, jobbe i team og utvikle nye ideer og konsepter. Jeg liker å møte nye mennesker og skape gode relasjoner. Jeg er spesielt interessert i hvordan tekniske løsninger kan skape intuitive og engasjerende brukeropplevelser, og jeg liker å utforske kreativitet og nye designideer. Jeg har og god erfaring med front-end, back-end, design thinking og brukerforståelse.'
               )}
             </p>
             <p className="text-[rgba(var(--text-rgb),0.85)]">
               {t(
                 'about.p2',
-                'Med bakgrunn i celle- og molekylærbiologi har jeg fått et tverrfaglig perspektiv og en bredere forståelse av hvordan datamodelleringsmetoder kan løse komplekse problemer.'
+                'Med bakgrunn fra celle- og molekylærbiologi synes jeg forståelsen av større systemer er spennende. Selv om biologiske systemer ikke er helt like som i informatikk, kan man likevel se likheter i hvordan ting er bygget opp og samspillet i større systemer. Dette synes jeg er spennende. Kombinasjonen av gradene mine gir meg en tverrfaglig bakgrunn, som har gitt meg interesse for hvordan data og modellering kan løse brede problemer.'
               )}
             </p>
             <p className="text-[rgba(var(--text-rgb),0.85)]">
               {t(
                 'about.p3',
-                'Utenfor tech er jeg sosial og aktivt involvert i studentforeningen min. Her har jeg fått erfaring med å koordinere frivillige, jobbe med administrasjon og kommunikasjon for å skape et inkluderende miljø. Det er noe jeg virkelig verdsetter og en erfaring jeg aldri ville vært foruten. Det har lært meg mye om samarbeid, ansvar og å være en del av noe større.'
+                'På siden er jeg sosial og aktiv i linjeforeningen min. Her har jeg fått erfaring med å koordinere frivillige, jobbe med administrasjon og kommunikasjon for å skape et inkluderende miljø. Det jeg liker best med verv er oppfordringen til å gi av seg selv og å jobbe sammen for å skape noe som gir glede. Det har lært meg mye om samarbeid, ansvar og å være en del av noe større.'
               )}
             </p>
           </div>

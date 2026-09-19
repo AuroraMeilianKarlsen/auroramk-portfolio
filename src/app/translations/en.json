@@ -27,14 +27,19 @@
     "title": "Education",
     "degree1": "Master's in Informatics",
     "desc1": "Specialization in Interaction Design, Game and Learning Technology, focused on building interactive systems with the user experience at the centre.",
-    "details1": "A research-based programme where you specialize within one field and complete the degree with a master’s thesis. The specialization in interaction design, game and learning technology covers the development of interactive graphical systems, from simulators to pure entertainment games: user interface design, 2D and 3D graphics programming, software architecture and system development, and artificial intelligence in interactive systems. Game design and game development methodology are used in project work, along with the use of games in learning, interactive storytelling and gamification of applications. You develop scientific working methods and the ability to solve new and challenging problems.",
+    "details1": "In-depth study of designing graphical user interfaces with user-centred methods, the theory behind computer games and how ideas become playable experiences, and how digital tools can support teaching and learning. The degree includes practical projects in interdisciplinary teams and concludes with a master's thesis.",
     "degree2": "Bachelor's in Computer Science",
     "desc2": "Effective, safe and flexible software development, algorithms, building user-friendly applications.",
-    "details2": "Programming, algorithms, data structures, and software development methodology. You gain skills in building secure, user-friendly systems for web, mobile, and desktop applications. The program covers database design, network communication, data-driven software development and human-computer interaction, preparing you to solve complex technical problems while understanding technology's role in society.",
+    "details2": "Broad knowledge of programming, system development, software and communication-based systems, with an emphasis on building user-friendly computer systems. Practical experience with database design, web technologies, interaction design and information security, along with an understanding of the role of information technology in society and of sustainable development.",
+    "highlights2": [
+      "Exchange semester at the University of Padua, autumn 2025.",
+      "Bachelor's thesis: development of a health application for mapping and detecting cardiometabolic risk factors using the Hjertefrisk algorithm."
+    ],
     "degree3": "Bachelor's in Biology",
     "desc3": "Specialization in Cell and Molecular Biology, providing a strong foundation in scientific research and analytical thinking.",
-    "details3": "Understanding life from molecular processes to ecosystems. Specialization in cell and molecular biology provides knowledge of how organisms function at the cellular level, including physiology, genetics, and ecotoxicology. A fundamental understanding of biological systems and how these systems inspired neural network architectures. You develop practical lab skills, scientific methodology, and the ability to contribute to sustainable development and environmental conservation.",
-    "whatYouLearn": "What you learn:",
+    "details3": "Knowledge of living organisms, from molecular processes in the cell to the diversity of organisms, with an in-depth focus on the structure and function of cells and on heredity, DNA, RNA and proteins. Hands-on lab experience with methods in molecular genetics, protein separation, protein identification and immunology, and with processing, interpreting and presenting results from lab experiments.",
+    "competence": "Knowledge and skills:",
+    "programmeLink": "Read more about the programme at NTNU",
     "readMore": "Read more",
     "readLess": "Read less"
   },
