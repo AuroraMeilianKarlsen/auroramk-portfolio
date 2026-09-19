@@ -82,7 +82,7 @@ export default function HomeSection() {
               paperCount={1}
               items={['CV']}
               size={1.6}
-              color="#fa8caf" /* --secondary-1 */
+              color="#e6717d" 
               label={t('home.downloadCV', 'Last ned CV')}
               ariaLabel={t('home.downloadCV', 'Last ned CV')}
             />
